@@ -519,22 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "bussiness/inventario.php",
-			"settings":
-			{
-				"buffer_size": 4779,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/inventario/inventario-getdetails.php",
-			"settings":
-			{
-				"buffer_size": 613,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -630,12 +614,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/User/valorizacion"
-	],
 	"file_history":
 	[
+		"/C/Users/User/valorizacion/services/inventario/inventario-getdetails.php",
+		"/C/Users/User/valorizacion/bussiness/inventario.php",
 		"/C/Users/User/valorizacion/services/inventario/inventario-post.php",
 		"/C/Users/User/valorizacion/services/inventario/inventario-search.php",
 		"/C/Users/User/valorizacion/views/admin/inventario-list.php",
@@ -761,9 +743,7 @@
 		"/C/xampp/htdocs/cinadsacenter/views/admin/conceptoescalonable.php",
 		"/C/xampp/htdocs/cinadsacenter/views/admin/facturacionmaestro.php",
 		"/C/xampp/htdocs/foodmap/main.js",
-		"/C/xampp/htdocs/foodmap/data.js",
-		"/C/xampp/htdocs/foodmap/index.html",
-		"/C/xampp/htdocs/foodmap/info.html"
+		"/C/xampp/htdocs/foodmap/data.js"
 	],
 	"find":
 	{
@@ -1016,65 +996,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "bussiness/inventario.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "services/inventario/inventario-getdetails.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 613,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1118,7 +1041,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "valorizacion.sublime-project",
+	"project": "Modulos.sublime-project",
 	"replace":
 	{
 		"height": 50.0
