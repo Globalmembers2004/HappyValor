@@ -1,0 +1,5 @@
+[31-Oct-2017 16:53:04 America/Lima] PHP Fatal error:  Call to a member function isDataSet() on a non-object in /home/codigofit/public_html/common/PHPExcel/Worksheet.php on line 1156
+[31-Oct-2017 16:53:36 America/Lima] PHP Fatal error:  Call to a member function isDataSet() on a non-object in /home/codigofit/public_html/common/PHPExcel/Worksheet.php on line 1156
+[31-Oct-2017 16:54:19 America/Lima] PHP Fatal error:  Call to a member function isDataSet() on a non-object in /home/codigofit/public_html/common/PHPExcel/Worksheet.php on line 1156
+[21-Feb-2018 03:27:09 UTC] PHP Fatal error:  Class 'Db' not found in /home/amafit/public_html/app/bussiness/usuarios.php on line 6
+[21-Feb-2018 03:46:43 UTC] PHP Fatal error:  Class 'Db' not found in /home/amafit/public_html/app/bussiness/usuarios.php on line 6

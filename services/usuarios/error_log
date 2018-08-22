@@ -1,0 +1,12 @@
+[18-Jul-2017 11:07:51 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkUsername_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-username.php on line 24
+[18-Jul-2017 11:08:03 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:22:19 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkUsername_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-username.php on line 24
+[18-Jul-2017 11:22:21 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:22:22 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:22:22 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:41:10 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkUsername_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-username.php on line 24
+[18-Jul-2017 11:41:18 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:42:48 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkUsername_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-username.php on line 24
+[18-Jul-2017 11:42:55 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24
+[18-Jul-2017 11:44:35 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkUsername_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-username.php on line 24
+[18-Jul-2017 11:44:43 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::checkOnlyEmail_Plataforma() in /home/tamboapp/public_html/app/services/usuarios/check-email.php on line 24

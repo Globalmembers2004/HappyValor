@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+html, body {
+height: 100%;
+}
+
+html {
+margin: 0;
+padding: 0;
+min-height: 100%;
+overflow: hidden;
+}
+
+body {
+background: #52878F url(../images/bg-login3.jpg) no-repeat center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-size: 16px;
+font-weight: 300;
+margin: 0;
+overflow: hidden;
+}
+
+body, 
+strong, 
+h1, 
+h3,
+input,
+button {
+	font-family:  'Segoe UI Light_', 'Open Sans Light', Helvetica, Arial !important;
+}
+
+form {
+width: 100%;
+height: 100%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.md-18 { font-size: 18px; }
+.md-24 { font-size: 24px; }
+.md-36 { font-size: 36px; }
+.md-48 { font-size: 48px; }
+.md-64 { font-size: 64px; }
+
+.clear {
+	clear: both;
+}
+
+h1, h3 {
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+h3 {
+	font-weight: 300 !important;
+}
+
+::-webkit-input-placeholder {
+   color: white !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white !important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white !important;  
+}
+
+:-ms-input-placeholder {  
+   color: white !important;  
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  background-image:none !important;
+  color: #000000 !important;
+}
+
+.panel-login {
+width: 400px;
+/*top: 50%;*/
+/*margin-top: -270px;*/
+height: 540px;
+border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .panel-login {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  border-radius: 0;
+  }
+}
+
+
+.logo {
+width: 100%;
+height: 170px;
+}
+
+.button-wrapper {
+width: 100%;
+height: 80px;
+}
+
+.button-wrapper button {
+margin: 15px;
+}

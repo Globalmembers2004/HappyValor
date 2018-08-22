@@ -1,0 +1,10 @@
+[23-Apr-2018 10:31:47 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[23-Apr-2018 10:31:47 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103
+[23-Apr-2018 10:32:35 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[23-Apr-2018 10:32:35 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103
+[26-Apr-2018 10:53:02 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[26-Apr-2018 10:53:02 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103
+[26-Apr-2018 10:55:56 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[26-Apr-2018 10:55:56 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103
+[26-Apr-2018 11:03:36 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[26-Apr-2018 11:03:36 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103

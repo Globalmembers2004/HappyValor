@@ -1,0 +1,143 @@
+<?php
+        require 'bussiness/tabla.php';
+        $objTabla = new clsTabla();
+?>
+<form id="form1" name="form1" method="post">
+    <input type="hidden" id="fnPost" name="fnPost" value="fnPost" />
+    <input type="hidden" id="hdIdEmpresa" name="hdIdEmpresa" value="<?php echo $IdEmpresa; ?>" />
+    <input type="hidden" id="hdIdCentro" name="hdIdCentro" value="<?php echo $IdCentro; ?>" />
+    <div class="page-region">
+        <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header red --waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Seguimiento de Metas</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnSearch" data-type="search">
+                        <i class="material-icons">&#xE8B6;</i>
+                    </button>
+                    <button type="button" class="btnOpciones mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnOpciones">
+                        <i class="material-icons">&#xE5D4;</i>
+                    </button>
+                </div>
+            </header>
+            <?php include 'common/droplist-generic.php'; ?>
+
+            <div class="mdl-layout__drawer-button">
+                <!-- <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons">&#xE5D2;</i>
+                </a> -->
+                <a class="back-activity mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons">&#xE5C4;</i>
+                </a>
+            </div>            
+            <!-- <div class="control-inner-app mdl-layout__drawer-button">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons">&#xE5D2;</i>
+                </a>
+            </div> -->
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div id="gvDatos" class="gridview" data-selected="none" data-multiselect="false" data-actionbar="generic-actionbar">
+                        <ul class="collection gridview-content">
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <a id="btnNuevo" class="mdl-button mdl-js-button mdl-button--fab animate mdl-js-ripple-effect mdl-button--colored" style="bottom: 45px; right: 24px; position: absolute; z-index: 900;">
+                <i class="material-icons">&#xE145;</i>
+            </a>
+        </div>
+    </div>
+    <div id="pnlForm" class="modal-example-content modaldos expand-phone without-footer">
+        <input type="hidden" id="hdIdPrimary" name="hdIdPrimary" value="0" />
+        <input type="hidden" id="hdFoto" name="hdFoto" value="no-set" />
+        <div class="modal-example-header no-padding mdl-layout--fixed-header">
+            <header class="mdl-layout__header red">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Seguimiento</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon tooltipped" data-placement="left" data-toggle="tooltip" title="Guardar cambios" id="btnGuardar">
+                        <i class="material-icons">&#xE5CA;</i>
+                    </button>
+                </div>
+            </header>
+            <div title="<?php $translate->__('Ocultar'); ?>" class="close-dialog mdl-button--icon mdl-layout__drawer-button">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons">&#xE14C;</i>
+                </a>
+            </div>
+        </div>
+        <div class="modal-example-body">
+            <div class="scrollbarra padding20">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="active" for="ddlPeriodo"><?php $translate->__('Periodo evaluado'); ?></label>
+                        <select id="ddlPeriodo" name="ddlPeriodo" style="width: 100%;" class="browser-default">
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtServicios" name="txtServicios" require>
+                            <label for="txtServicios">Gastos de Servicios</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtSueldos" name="txtSueldos">
+                            <label for="txtSueldos"><?php $translate->__('Gastos de sueldos'); ?></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtOtros" name="txtOtros">
+                            <label for="txtOtros"><?php $translate->__('Otros gastos'); ?></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtTotal" name="txtTotal">
+                            <label for="txtTotal"><?php $translate->__('Total gastos'); ?></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtIngresos" name="txtIngresos">
+                            <label for="txtIngresos"><?php $translate->__('Ingresos'); ?></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtMeta" name="txtMeta">
+                            <label for="txtMeta"><?php $translate->__('Meta'); ?></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtFaltante" name="txtFaltante">
+                            <label for="txtFaltante"><?php $translate->__('Faltante'); ?></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field full-size">
+                            <input class="validate" type="number" id="txtPorcentaje" name="txtPorcentaje">
+                            <label for="txtPorcentaje"><?php $translate->__('% Faltante'); ?></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">              
+                    <div class="col-md-12">
+                        <div class="input-field full-size">
+                            <input class="validate" type="text" id="txtObservacion" name="txtObservacion">
+                            <label for="txtObservacion"><?php $translate->__('Observación'); ?></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php include 'common/generic-actionbar.php'; ?>
+</form>

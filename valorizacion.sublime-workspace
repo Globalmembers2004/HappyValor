@@ -1,0 +1,2179 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"centr",
+				"centroCosto"
+			],
+			[
+				"_id",
+				"_idcentrocosto"
+			],
+			[
+				"DECI",
+				"DECIMAL"
+			],
+			[
+				"tm_cant",
+				"tm_cant_inve"
+			],
+			[
+				"_cent",
+				"_centrodestino"
+			],
+			[
+				"tm_centro",
+				"tm_centrocosto"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"fec",
+				"fechainicial"
+			],
+			[
+				"td_i",
+				"td_idinventario"
+			],
+			[
+				"td",
+				"td_inventario"
+			],
+			[
+				"_cant",
+				"_cant_envi"
+			],
+			[
+				"centro",
+				"centrodes"
+			],
+			[
+				"idpro",
+				"idproducto"
+			],
+			[
+				"tm_idcencost",
+				"tm_idcencosto_des"
+			],
+			[
+				"tm_tipo",
+				"tm_tipo_familia"
+			],
+			[
+				"tm_idp",
+				"tm_idperiodo"
+			],
+			[
+				"in",
+				"inventario"
+			],
+			[
+				"td_cant",
+				"td_cant_envi"
+			],
+			[
+				"cant",
+				"cantcons"
+			],
+			[
+				"Butt",
+				"button"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"i",
+				"idfamilia"
+			],
+			[
+				"tm_co",
+				"tm_codfam_star"
+			],
+			[
+				"C",
+				"CProductos"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"boo",
+				"bootstrap.min.js"
+			],
+			[
+				"idcen",
+				"idcencosto"
+			],
+			[
+				"tm_",
+				"tm_descripcion"
+			],
+			[
+				"tipo",
+				"tipofamilia"
+			],
+			[
+				"fo",
+				"focus\t.focus()"
+			],
+			[
+				"p_tipo",
+				"p_tipofamilia"
+			],
+			[
+				"idp",
+				"idproducto"
+			],
+			[
+				"fech",
+				"fechainicial"
+			],
+			[
+				"tm_id",
+				"tm_idtipofamilia"
+			],
+			[
+				"se",
+				"servidor"
+			],
+			[
+				"order",
+				"orderDirection"
+			],
+			[
+				"vale",
+				"value"
+			],
+			[
+				"users",
+				"usersOrder"
+			],
+			[
+				"ii",
+				"information"
+			],
+			[
+				"value",
+				"valueOrder"
+			],
+			[
+				"fil",
+				"filterBy"
+			],
+			[
+				"otr",
+				"orderDirection"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"inne",
+				"innerHTML"
+			],
+			[
+				"innr",
+				"innerHTML"
+			],
+			[
+				"con",
+				"countdata"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"parse",
+				"parseFloat"
+			],
+			[
+				"orde",
+				"orderBy"
+			],
+			[
+				"ord",
+				"orderBy"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"dat",
+				"dataProgress"
+			],
+			[
+				"data",
+				"dataUsers"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"JSON",
+				"users.json"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"image",
+				"border-image-slice"
+			],
+			[
+				"Image",
+				"border-image-width"
+			],
+			[
+				"ima",
+				"image-rendering"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"top",
+				"border-top"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"O",
+				"offset"
+			],
+			[
+				"enco",
+				"encodeResult"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"al",
+				"text-align"
+			],
+			[
+				"padding-t",
+				"padding-bottom"
+			],
+			[
+				"selec",
+				"selectedIndex"
+			],
+			[
+				"position",
+				"object-position"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"de",
+				"Delivery"
+			],
+			[
+				"txt",
+				"textOne"
+			],
+			[
+				"ke",
+				"keypress\t.keypress()"
+			],
+			[
+				"onl",
+				"onlyText2"
+			],
+			[
+				"borrar",
+				"borrarorigen"
+			],
+			[
+				"PA",
+				"padding-bottom"
+			],
+			[
+				"MAR",
+				"margin-bottom"
+			],
+			[
+				"MA",
+				"margin-left"
+			],
+			[
+				"c",
+				"cadena2"
+			],
+			[
+				"all",
+				"alignment-baseline"
+			],
+			[
+				"num",
+				"numero"
+			],
+			[
+				"nume",
+				"numero"
+			],
+			[
+				"NUME",
+				"numero1"
+			],
+			[
+				"Solo",
+				"soloLetras"
+			],
+			[
+				"BA",
+				"background-color"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"sha",
+				"box-shadow"
+			],
+			[
+				"ali",
+				"animation-fill-mode"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"ready",
+				"ready\t$(document).ready"
+			],
+			[
+				"litera",
+				"literature"
+			],
+			[
+				"Libro",
+				"LibroVentas"
+			],
+			[
+				"_ti",
+				"_tipdoc"
+			],
+			[
+				"conta",
+				"conta_destino"
+			],
+			[
+				"sub",
+				"subdiario"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"WH",
+				"column-width"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"li",
+				"literature"
+			],
+			[
+				"document",
+				"documento"
+			],
+			[
+				"txtTipo",
+				"txtTipoDoc"
+			],
+			[
+				"txtRuc",
+				"txtRucreceptor"
+			],
+			[
+				"txtTip",
+				"txtTipoDoc"
+			],
+			[
+				"nro",
+				"nro_file"
+			],
+			[
+				"glosa",
+				"glosa_mov"
+			],
+			[
+				"glo",
+				"glosa"
+			],
+			[
+				"nro_",
+				"nro_doc_ref"
+			],
+			[
+				"com",
+				"comprobante"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "bussiness/inventario.php",
+			"settings":
+			{
+				"buffer_size": 4779,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/inventario/inventario-getdetails.php",
+			"settings":
+			{
+				"buffer_size": 613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/inventario/inventario-post.php",
+			"settings":
+			{
+				"buffer_size": 1967,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/inventario/inventario-search.php",
+			"settings":
+			{
+				"buffer_size": 1327,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/admin/inventario-list.php",
+			"settings":
+			{
+				"buffer_size": 7528,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/app/admin/inventario-script.js",
+			"settings":
+			{
+				"buffer_size": 18398,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/valorizacion/INVENTARIIO.csv",
+			"settings":
+			{
+				"buffer_size": 106333,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/valorizacion/PRODUCTOS.csv",
+			"settings":
+			{
+				"buffer_size": 495123,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/suministro/suministro-post.php",
+			"settings":
+			{
+				"buffer_size": 4930,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bussiness/suministro.php",
+			"settings":
+			{
+				"buffer_size": 4728,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/cinadsacenter/dist/js/app/process/facturacion-script.js",
+			"settings":
+			{
+				"buffer_size": 119315,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/cinadsacenter/views/process/facturacion.php",
+			"settings":
+			{
+				"buffer_size": 48363,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/app/settings/periodo-script.js",
+			"settings":
+			{
+				"buffer_size": 13219,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/reenvio/reenvio-post.php",
+			"settings":
+			{
+				"buffer_size": 1697,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/BDValorizacion.sql",
+			"settings":
+			{
+				"buffer_size": 368670,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Packages",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"te",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"Te",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"text pa",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"textp",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"removep",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 192.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"git init",
+			"git status",
+			"git config --global user.email andreale17@icloud.com"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/valorizacion",
+		"/C/xampp/htdocs/valorizacion/bussiness"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/valorizacion/common/init_session.php",
+		"/C/xampp/htdocs/valorizacion/common/contents.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/imp-suministro-script.js",
+		"/D/valorizacion.sql",
+		"/C/xampp/htdocs/valorizacion/views/admin/imp-suministro-list.php",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-post.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/suministro.php",
+		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-post.php",
+		"/D/valorizacion/INVENTARIIO.csv",
+		"/D/BDValorizacion.sql",
+		"/D/valorizacion/COSTO.csv",
+		"/D/producto.sql",
+		"/D/BDhappyland.sql",
+		"/D/valorizacion/tablas_adicionales.sql",
+		"/D/consolidado.sql",
+		"/D/valorizacion/CENTROCOSTO.csv",
+		"/D/valorizacion/PRODUCTOS.csv",
+		"/C/xampp/htdocs/valorizacion/services/familia/familia-post.php",
+		"/D/valorizacion/FAMILIA.csv",
+		"/C/xampp/htdocs/valorizacion/bussiness/familia.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/familia-script.js",
+		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-search.php",
+		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-getdetails.php",
+		"/D/Preguntas/psico/banco.txt",
+		"/C/Users/User/Downloads/BANCO_2.pdf",
+		"/D/Preguntas/psico/BANCO_2.txt",
+		"/C/Users/User/Downloads/BANCO_2.docx",
+		"/D/valorizacion/ENLACE.csv",
+		"/D/valorizacion/CUENTACONTABLE.csv",
+		"/C/xampp/htdocs/valorizacion/views/admin/imp-suministro.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/enlace-script.js",
+		"/C/xampp/htdocs/valorizacion/services/ctactb/ctactb-search.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/ctactb.php",
+		"/C/xampp/htdocs/valorizacion/services/enlace/enlace-search.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/enlace.php",
+		"/C/xampp/htdocs/valorizacion/views/security/users-list.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/security/users-script.js",
+		"/C/xampp/htdocs/valorizacion/services/enlace/enlace-post.php",
+		"/C/xampp/htdocs/valorizacion/services/usuarios/usuarios-post.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/enlace.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/usuarios.php",
+		"/C/xampp/htdocs/valorizacion/views/security/access-list.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/enlaces-list.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/ctactb.php",
+		"/C/xampp/htdocs/valorizacion/services/ctactb/ctactb-post.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/ctactb-script.js",
+		"/C/xampp/htdocs/valorizacion/views/settings/centrocosto.php",
+		"/C/xampp/htdocs/valorizacion/services/periodo/periodo-post.php",
+		"/D/registrar.sql",
+		"/C/xampp/htdocs/valorizacion/views/admin/inventario-list.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/inventario-script.js",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-post.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/inventario.php",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-getdetails.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/centrocosto-script.js",
+		"/C/xampp/htdocs/valorizacion/bussiness/reenvio.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/tipoambiente-script.js",
+		"/C/xampp/htdocs/amafit/app/views/settings/tipoambiente.php",
+		"/C/xampp/htdocs/valorizacion/views/cliente/clienteusuario-list.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/enlaces.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/familia.php",
+		"/C/xampp/htdocs/valorizacion/services/familia/familia-search.php",
+		"/C/xampp/htdocs/valorizacion/services/tipoambiente/tipoambiente-post.php",
+		"/C/xampp/htdocs/amafit/app/scripts/app/admin/cliente-script.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/settings/horariogrupal-script.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/admin/equipo-script.js",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/periodo-script.js",
+		"/C/xampp/htdocs/valorizacion/services/tipofamilia/tipofamilia-search.php",
+		"/C/xampp/htdocs/valorizacion/views/common/home.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/accesosdirectos.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/settings/tipofamilia-script.js",
+		"/C/xampp/htdocs/valorizacion/scripts/app/security/perfil-script.js",
+		"/C/xampp/htdocs/valorizacion/views/security/access-form.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/tipofamilia.php",
+		"/C/xampp/htdocs/valorizacion/views/settings/periodo.php",
+		"/C/xampp/htdocs/amafit/app/common/header.php",
+		"/C/xampp/htdocs/amafit/app/scripts/app/common/contents.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/common/home.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/common/contents-jquery.js",
+		"/D/valorizacion/productos.csv",
+		"/C/xampp/htdocs/noafp/index.html",
+		"/C/xampp/htdocs/noafp/css/bootstrap.css",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-30 Y 31.csv",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-24 AL 29.csv",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-17 AL 23.csv",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-13 AL 16.csv",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-09 AL 12.csv",
+		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-01 AL 08.csv",
+		"/C/xampp/htdocs/happyland/createExcel.php",
+		"/C/xampp/htdocs/happyland/procesarLibro.php",
+		"/C/xampp/htdocs/happyland/ParaLibro.html",
+		"/C/xampp/htdocs/happyland/procesar.php",
+		"/C/xampp/htdocs/happyland/Consolidado.php",
+		"/D/libro.sql",
+		"/C/xampp/htdocs/globalmembers/index.php",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-search.php",
+		"/C/xampp/htdocs/valorizacion/services/centrocosto/centrocosto-search.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/centrocosto.php",
+		"/C/xampp/htdocs/cinadsacenter/dist/js/app/admin/concepto-script.js",
+		"/C/xampp/htdocs/cinadsacenter/dist/js/app/process/facturacion-script.js",
+		"/C/xampp/htdocs/cinadsacenter/dist/js/app/process/presupuesto-script.js",
+		"/C/xampp/htdocs/amafit/app/views/admin/rutinagym-list.php",
+		"/C/xampp/htdocs/amafit/app/views/settings/rutinagym.php",
+		"/C/xampp/htdocs/amafit/app/views/settings/rutinagrupal.php",
+		"/C/xampp/htdocs/amafit/app/views/admin/rutinacliente-list.php",
+		"/C/xampp/htdocs/amafit/app/views/admin/equipo-list.php",
+		"/C/xampp/htdocs/amafit/app/views/admin/clasescliente-list.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/centro.php",
+		"/C/xampp/htdocs/happyland/services/consolidado/consolidado-post.php",
+		"/C/xampp/htdocs/happyland/bussiness/consolidado.php",
+		"/D/migracionHappy.sql",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-search.php",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-getdetails.php",
+		"/C/xampp/htdocs/cinadsacenter/views/admin/conceptoescalonable.php",
+		"/C/xampp/htdocs/cinadsacenter/views/admin/facturacionmaestro.php",
+		"/C/xampp/htdocs/foodmap/main.js",
+		"/C/xampp/htdocs/foodmap/data.js",
+		"/C/xampp/htdocs/foodmap/index.html",
+		"/C/xampp/htdocs/foodmap/info.html",
+		"/C/xampp/htdocs/foodmap/main.css",
+		"/C/xampp/htdocs/foodmap/restaurantes.json",
+		"/C/xampp/htdocs/amafit/app/scripts/app/admin/clientes-script.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/admin/ambientes-script.js",
+		"/D/tablas_migrar.sql",
+		"/C/xampp/htdocs/valorizacion/views/admin/validar_consolidado.js",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/productos-script.js",
+		"/C/xampp/htdocs/amafit/app/scripts/app/admin/evaluacioncliente-script.js",
+		"/C/xampp/htdocs/valorizacion/services/productos/productos-search.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"data-iddetalle",
+			"gvDatos",
+			"tableConcepto",
+			"rows",
+			"row",
+			"RegistrarCalculoConsumo",
+			"RegistrarReenvio",
+			"ListarDetalle",
+			"GuardarConceptoFact",
+			"RegistrarCalculoConsumo",
+			"ListarPropiedadConsumo",
+			"GuardarDatos",
+			"item",
+			"detalleReenvio",
+			"Reenvio",
+			"envio",
+			"Envio",
+			"gvDetalle",
+			"txtCantidadEnvi",
+			"AdicionarReenvio",
+			"gvDetalle",
+			"ddlCenCosDes",
+			"txtCantidadEnvi",
+			"AdicionarReenvio",
+			"function",
+			"AdicionarReenvio",
+			"Agregar",
+			"AdicionarReenvio",
+			"gvDetalle",
+			"AdicionarReenvio",
+			"spnIdPerfil",
+			"BuscarDatos",
+			"SMOFIP000001",
+			"txtDescripcion",
+			"inventario",
+			"REP00",
+			"REP000",
+			"REP",
+			"rep",
+			"GuardarDatos",
+			"a.",
+			"startsoft",
+			"tmp_",
+			"TipoFamilia",
+			"GoToEdit",
+			"tipofamilia",
+			"TipoFamilia",
+			"php",
+			"GetDataById",
+			"MostrarDatos",
+			"ListarZonacorporal_Combo",
+			"Opcion",
+			"opciones",
+			"ejecutar",
+			"DEFINER=`root`@`localhost`",
+			"inventario",
+			"CTotales",
+			"startsoft",
+			"starsoft",
+			"foto",
+			"Foto",
+			"foto",
+			"hdIdPrimary",
+			"hdIdInventario",
+			"hdIdPrimary",
+			"hdId",
+			"hdIdInventario",
+			"data-idcentrodes",
+			"idPro",
+			"idpro",
+			"data-idinventario",
+			"data-idproducto",
+			"hdId",
+			"hdIdItem",
+			"idid",
+			"producto",
+			"centroori",
+			"Pagina",
+			"GoToEdit",
+			"Torre",
+			"ddlCenCos",
+			"hdIdPrimary",
+			"Inventario",
+			"inventario",
+			"                    var idinventario = data[i].tm_idinventario;\n",
+			"data-id",
+			"iditem",
+			"text",
+			"ListarCenCosDes_Combo",
+			"ddlCenCos",
+			"GoToEdit",
+			"ddlCenCos",
+			"alert",
+			"GoToEdit",
+			"td_inventario",
+			"B134-00027205",
+			"B072-00033733",
+			"favi",
+			"favicon",
+			"inventario",
+			"hi",
+			"Lista",
+			"GoToEdit",
+			"txtCantidadEnv",
+			"Inventario",
+			"IdInventario",
+			"Inventario",
+			"GoToEdit",
+			"Grupal",
+			"periodo",
+			"inventario",
+			"SELECT INTO",
+			"INTO",
+			"inventario",
+			"tm_inventario",
+			"td_inventario",
+			"inventario",
+			"DetalleConsumo",
+			"facturacion",
+			"detalleInventario",
+			"hdMes",
+			"hdAnho",
+			"Propiedad",
+			"tablePropiedad",
+			"CalculoConsumo",
+			"fechaini",
+			"lecturaanterior",
+			"propiedad"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"hdIdInventario",
+			"",
+			"EliminarInventario",
+			"",
+			"inventario",
+			"Inventario",
+			"",
+			"periodo",
+			"",
+			"EliminarProducto",
+			"productos",
+			"Productos",
+			"productos",
+			"tipofamilia",
+			"txtAbreviatura",
+			"ctactb",
+			"enlace",
+			"CtaCtb",
+			"Productos",
+			"idcencosto",
+			"centrocosto",
+			"CentroCosto",
+			"centrocosto",
+			"CentroCosto",
+			"",
+			"TipoFamilia",
+			"familia",
+			"tipofamilia",
+			"Tipofamilia",
+			"tipofamilia",
+			"Tipofamilia",
+			"CREATE OR REPLACE TABLE",
+			"idcostoproducto",
+			"costo_producto",
+			"conproducto",
+			"_consumo_producto",
+			"tm_periodo",
+			"periodo",
+			"UBICACION",
+			"",
+			"UBICACION:",
+			"idcoscta",
+			"",
+			"oJSON",
+			"name",
+			"users",
+			"",
+			"let ",
+			"numberSet",
+			"numberOne",
+			"qL",
+			"quantityLetters",
+			"cantidadLetters",
+			"clearOne",
+			"clearTwo",
+			"clearOne",
+			"decrypt",
+			"encrypt",
+			"textTwo",
+			"textOne",
+			"offset",
+			"",
+			"'",
+			"|",
+			"",
+			"enlaces",
+			"",
+			"Origen",
+			"Cambio",
+			"",
+			"origen",
+			"row",
+			"libroventas",
+			"Libroventas",
+			"libroventas",
+			"consolidado",
+			"migracion",
+			"cliente",
+			"cambio",
+			"enlaces",
+			"Enlace",
+			"enlace",
+			"migracion",
+			"",
+			"OWNER TO cinadsac_inmobiliaria;",
+			"postgres;",
+			"",
+			"cinadsac_inmobiliaria;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "bussiness/inventario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "services/inventario/inventario-getdetails.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "services/inventario/inventario-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1150,
+								1150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "services/inventario/inventario-search.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1085,
+								1095
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/admin/inventario-list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scripts/app/admin/inventario-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17071,
+								17085
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10323.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/valorizacion/INVENTARIIO.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106333,
+								106333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 57502.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/valorizacion/PRODUCTOS.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "services/suministro/suministro-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4480,
+								4480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1091.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "bussiness/suministro.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/xampp/htdocs/cinadsacenter/dist/js/app/process/facturacion-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76196,
+								76210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 40476.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/xampp/htdocs/cinadsacenter/views/process/facturacion.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4896,
+								4801
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1183.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "scripts/app/settings/periodo-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								60
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "services/reenvio/reenvio-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1697,
+								1697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/D/BDValorizacion.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								368670,
+								368670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 83737.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "valorizacion.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"suministr",
+				"bussiness\\suministro.php"
+			],
+			[
+				"suminis",
+				"services\\suministro\\suministro-post.php"
+			],
+			[
+				"periodo",
+				"scripts\\app\\settings\\periodo-script.js"
+			],
+			[
+				"reen",
+				"services\\reenvio\\reenvio-post.php"
+			],
+			[
+				"sumin",
+				"scripts\\app\\admin\\imp-suministro-script.js"
+			],
+			[
+				"inven",
+				"scripts\\app\\admin\\inventario-script.js"
+			],
+			[
+				"inventa",
+				"bussiness\\inventario.php"
+			],
+			[
+				"invent",
+				"services\\inventario\\inventario-post.php"
+			],
+			[
+				"suministro",
+				"services\\suministro\\suministro-post.php"
+			],
+			[
+				"familia",
+				"services\\familia\\familia-post.php"
+			],
+			[
+				"sum",
+				"bussiness\\suministro.php"
+			],
+			[
+				"sumini",
+				"services\\suministro\\suministro-post.php"
+			],
+			[
+				"imp-sumi",
+				"scripts\\app\\admin\\imp-suministro-script.js"
+			],
+			[
+				"imp-sum",
+				"views\\admin\\imp-suministro-list.php"
+			],
+			[
+				"imp-sumini",
+				"views\\admin\\imp-suministro.php"
+			],
+			[
+				"usuarios",
+				"bussiness\\usuarios.php"
+			],
+			[
+				"usua",
+				"services\\usuarios\\usuarios-post.php"
+			],
+			[
+				"users",
+				"scripts\\app\\security\\users-script.js"
+			],
+			[
+				"user",
+				"views\\security\\users-list.php"
+			],
+			[
+				"access",
+				"views\\security\\access-list.php"
+			],
+			[
+				"ctactb",
+				"bussiness\\ctactb.php"
+			],
+			[
+				"enlace",
+				"services\\enlace\\enlace-post.php"
+			],
+			[
+				"cta",
+				"services\\ctactb\\ctactb-post.php"
+			],
+			[
+				"ctact",
+				"bussiness\\ctactb.php"
+			],
+			[
+				"centrocosto",
+				"views\\settings\\centrocosto.php"
+			],
+			[
+				"centrocos",
+				"scripts\\app\\settings\\centrocosto-script.js"
+			],
+			[
+				"perio",
+				"scripts\\app\\settings\\periodo-script.js"
+			],
+			[
+				"acces",
+				"views\\settings\\accesosdirectos.php"
+			],
+			[
+				"tipofami",
+				"scripts\\app\\settings\\tipofamilia-script.js"
+			],
+			[
+				"tipofa",
+				"scripts\\app\\settings\\tipofamilia-script.js"
+			],
+			[
+				"users-scr",
+				"scripts\\app\\security\\users-script.js"
+			],
+			[
+				"",
+				"scripts\\app\\security\\perfil-script.js"
+			],
+			[
+				"period",
+				"scripts\\app\\settings\\periodo-script.js"
+			],
+			[
+				"perfil",
+				"scripts\\app\\security\\perfil-script.js"
+			],
+			[
+				"usuar",
+				"views\\cliente\\clienteusuario-list.php"
+			],
+			[
+				"accesos",
+				"views\\settings\\accesosdirectos.php"
+			],
+			[
+				"tipofamilia",
+				"views\\settings\\tipofamilia.php"
+			],
+			[
+				"home",
+				"views\\common\\home.php"
+			],
+			[
+				"acceso",
+				"views\\settings\\accesosdirectos.php"
+			],
+			[
+				"tipoam",
+				"services\\tipoambiente\\tipoambiente-post.php"
+			],
+			[
+				"fami",
+				"services\\familia\\familia-post.php"
+			],
+			[
+				"tipoambient",
+				"scripts\\app\\settings\\tipoambiente-script.js"
+			],
+			[
+				"famili",
+				"views\\settings\\familia.php"
+			],
+			[
+				"fam",
+				"bussiness\\familia.php"
+			],
+			[
+				"peri",
+				"services\\periodo\\periodo-post.php"
+			],
+			[
+				"inventar",
+				"services\\inventario\\inventario-post.php"
+			],
+			[
+				"reenvio",
+				"services\\reenvio\\reenvio-post.php"
+			],
+			[
+				"reee",
+				"services\\reenvio\\reenvio-getdetails.php"
+			],
+			[
+				"inve",
+				"scripts\\app\\admin\\inventario-script.js"
+			],
+			[
+				"familia.",
+				"views\\settings\\familia.php"
+			],
+			[
+				"inventari",
+				"scripts\\app\\admin\\inventario-script.js"
+			],
+			[
+				"centr",
+				"bussiness\\centro.php"
+			],
+			[
+				"centrocosto-sear",
+				"services\\centrocosto\\centrocosto-search.php"
+			],
+			[
+				"inventario",
+				"bussiness\\inventario.php"
+			],
+			[
+				"imp",
+				"views\\admin\\imp-suministro-list.php"
+			],
+			[
+				"imp-",
+				"views\\admin\\imp-suministro.php"
+			],
+			[
+				"productos",
+				"services\\productos\\productos-search.php"
+			],
+			[
+				"usuario-li",
+				"views\\cliente\\clienteusuario-list.php"
+			],
+			[
+				"usuario",
+				"views\\cliente\\clienteusuario-list.php"
+			],
+			[
+				"producto",
+				"views\\admin\\productos-list.php"
+			],
+			[
+				"enlace-sc",
+				"scripts\\app\\settings\\enlace-script.js"
+			],
+			[
+				"produ",
+				"services\\productos\\productos-search.php"
+			],
+			[
+				"prod",
+				"views\\admin\\productos-list.php"
+			],
+			[
+				"enlaces.p",
+				"bussiness\\enlaces.php"
+			],
+			[
+				"product",
+				"services\\productos\\productos-getdetails.php"
+			],
+			[
+				"produc",
+				"scripts\\app\\admin\\productos-script.js"
+			],
+			[
+				"enlaces",
+				"scripts\\app\\admin\\enlaces-script.js"
+			],
+			[
+				"cliente",
+				"views\\admin\\cliente-list.php"
+			],
+			[
+				"centrocosto-s",
+				"services\\centrocosto\\centrocosto-search.php"
+			],
+			[
+				"producto-scr",
+				"scripts\\app\\admin\\productos-script.js"
+			],
+			[
+				"cliente.php",
+				"bussiness\\cliente.php"
+			],
+			[
+				"cliente-se",
+				"services\\cliente\\cliente-search.php"
+			],
+			[
+				"cliente-scrip",
+				"scripts\\app\\admin\\cliente-script.js"
+			],
+			[
+				"pro",
+				"services\\productos\\productos-getdetails.php"
+			],
+			[
+				"cliente-sc",
+				"scripts\\app\\admin\\cliente-script.js"
+			],
+			[
+				"progr",
+				"data\\cohorts\\lim-2018-03-pre-core-pw\\progressPrueba.json"
+			],
+			[
+				"progre",
+				"data\\cohorts\\lim-2018-03-pre-core-pw\\progressPrueba.json"
+			],
+			[
+				"depe",
+				"node_modules\\ajv\\lib\\dot\\dependencies.jst"
+			],
+			[
+				"fix",
+				"test\\fixtures.js"
+			],
+			[
+				"head",
+				"test\\headless.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"data",
+				"src\\data.js"
+			],
+			[
+				"ind",
+				"src\\index.html"
+			],
+			[
+				"i",
+				"APP\\index.html"
+			],
+			[
+				"da",
+				"informes\\data.js"
+			],
+			[
+				"use",
+				"informes\\users.json"
+			],
+			[
+				"proceso",
+				"cinadsacenter\\bussiness\\proceso.php"
+			],
+			[
+				"facturacion",
+				"cinadsacenter\\bussiness\\facturacion.php"
+			],
+			[
+				"condo",
+				"cinadsacenter\\dist\\js\\app\\admin\\condominio-script.js"
+			],
+			[
+				"constr",
+				"cinadsacenter\\dist\\js\\app\\admin\\constructora-script.js"
+			],
+			[
+				"fact",
+				"cinadsacenter\\dist\\js\\app\\process\\facturacion-script.js"
+			],
+			[
+				"origen",
+				"scripts\\app\\admin\\origen-script.js"
+			],
+			[
+				"consolidao-sc",
+				"scripts\\app\\admin\\consolidado-script.js"
+			],
+			[
+				"consolidado",
+				"scripts\\app\\admin\\consolidado-script.js"
+			],
+			[
+				"consolidad",
+				"views\\admin\\consolidado-list.php"
+			],
+			[
+				"consoliad",
+				"bussiness\\consolidado.php"
+			],
+			[
+				"proce",
+				"procesar.php"
+			],
+			[
+				"venta",
+				"services\\ventas\\ventas-post.php"
+			],
+			[
+				"caja",
+				"services\\ventas\\caja-post.php"
+			],
+			[
+				"dto",
+				"services\\documentos\\documentos-tributables.php"
+			],
+			[
+				"compras",
+				"bussiness\\compras.php"
+			],
+			[
+				"compras-post",
+				"services\\compras\\compras-post.php"
+			],
+			[
+				"tipo",
+				"bussiness\\tipocomprobante.php"
+			],
+			[
+				"moneda",
+				"bussiness\\monedas.php"
+			],
+			[
+				"procesa",
+				"procesar.php"
+			],
+			[
+				"header",
+				"common\\header.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"conten",
+				"common\\contents.php"
+			],
+			[
+				"reg",
+				"views\\admin\\regventas.php"
+			],
+			[
+				"getven",
+				"functions\\getVentas.php"
+			],
+			[
+				"conso",
+				"Consolidado.php"
+			],
+			[
+				"consol",
+				"Consolidado.php"
+			],
+			[
+				"consoli",
+				"Consolidado.php"
+			],
+			[
+				"libro",
+				"scripts\\app\\admin\\libroventas-script.js"
+			],
+			[
+				"cam",
+				"scripts\\app\\admin\\cambio-script.js"
+			],
+			[
+				"cliente-scr",
+				"scripts\\app\\admin\\cliente-script.js"
+			],
+			[
+				"enlace-sr",
+				"scripts\\app\\admin\\enlaces-script.js"
+			],
+			[
+				"cambio-scr",
+				"scripts\\app\\admin\\cambio-script.js"
+			],
+			[
+				"origen-scr",
+				"scripts\\app\\admin\\origen-script.js"
+			],
+			[
+				"libroventas-pos",
+				"services\\libroventas\\libroventas-post.php"
+			],
+			[
+				"libroventas-sc",
+				"scripts\\app\\admin\\libroventas-script.js"
+			],
+			[
+				"cambio-l",
+				"views\\admin\\cambio-list.php"
+			],
+			[
+				"origen-sc",
+				"scripts\\app\\admin\\origen-script.js"
+			],
+			[
+				"ori",
+				"bussiness\\origen.php"
+			],
+			[
+				"orige-li",
+				"views\\admin\\origen-list.php"
+			],
+			[
+				"enlace-scr",
+				"scripts\\app\\admin\\enlaces-script.js"
+			],
+			[
+				"cambio-",
+				"scripts\\app\\admin\\cambio-script.js"
+			],
+			[
+				"libroventas",
+				"services\\libroventas\\libroventas-post.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 338.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

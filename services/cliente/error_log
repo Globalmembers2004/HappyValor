@@ -1,0 +1,4 @@
+[23-Apr-2018 10:10:15 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[23-Apr-2018 10:10:15 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103
+[24-Apr-2018 17:52:41 America/Lima] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 64
+[24-Apr-2018 17:52:41 America/Lima] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/atinperu/public_html/globalmembers.net/happyland/adata/Db.class.php on line 103

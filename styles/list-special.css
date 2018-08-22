@@ -1,0 +1,482 @@
+
+
+.resultItem {
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 8px;    
+    table-layout: fixed;
+    -webkit-transition: -webkit-box-shadow .2s;
+    -moz-transition: -moz-box-shadow .2s;
+    -o-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    cursor: pointer
+}
+
+.resultItem:hover {
+    -webkit-box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .15)
+}
+
+.resultItem>div {
+    display: table-row
+}
+
+.resultItem .resultItemContent {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.resultItem .resultItem-avatar {
+    width: 140px;
+    position: relative;
+    display: table-cell;
+    overflow: hidden !important;
+    vertical-align: top;
+    text-align: center;
+    height: 100%;
+}
+
+.resultItem .resultItem-avatar a,
+.resultItem .resultItem-avatar span {
+    display: block;
+    width: 120px;
+    overflow: hidden;
+    text-align: center
+}
+
+.resultItem .resultItem-avatar a {
+    position: relative;
+    z-index: 1
+}
+
+.resultItem .resultItem-avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultItem .resultItem-avatar img+.resultItem-defaultImageText {
+    display: none
+}
+
+.resultItem .resultItem-avatar .resultItem-defaultImage {
+    position: relative
+}
+
+.resultItem .resultItem-avatar .resultItem-defaultImage+.resultItem-defaultImageText {
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    margin-top: -10px;
+    top: 50%;
+    text-align: center;
+    z-index: 2;
+    color: #fff
+}
+
+.resultItem .resultItem-favorite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: #fff transparent transparent #fff;
+    border-style: solid;
+    border-width: 20px;
+    -webkit-transform: scale(.9999);
+    -ms-transform: scale(.9999);
+    -o-transform: scale(.9999);
+    transform: scale(.9999);
+    -webkit-transform: scale(.9999);
+    -moz-transform: scale(.9999);
+    -ms-transform: scale(.9999);
+    -o-transform: scale(.9999);
+    transform: scale(.9999);
+    outline: 0 none
+}
+
+.resultItem .resultItem-favorite span {
+    position: absolute;
+    display: block;
+    top: -18px;
+    left: -18px;
+    height: 20px;
+    width: 18px
+}
+
+.resultItem .resultItem-information {
+    /*padding: 0 12px;*/
+    display: table-cell;
+    padding: 14px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.resultItem .resultItem-name {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0 0 12px;
+    color: #4e4e56;
+    font-family: Raleway;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 90%;
+    padding: 0 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.resultItem .resultItem-footer {
+    display: none;
+    padding: 14px;
+    width: 100%;
+    border-top: 1px #dedede solid;
+}
+
+/*.resultItem .resultItem-name a {
+    display: inline-block;
+}*/
+
+.resultItem .resultItem-loyalty {
+    display: inline-block;
+    height: 19px;
+    margin-left: 5px;
+    vertical-align: top;
+    width: 19px
+}
+
+.resultItem .resultItem-address,
+.resultItem-averagePrice {
+    color: #8b8b91;
+    margin: 0 0 4px;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.resultItem .resultItem-distance {
+    color: #4e4e56
+}
+
+.resultItem-averagePrice,
+.resultItem .resultItem-tagList {
+    margin: 0 0 5px
+}
+
+.resultItem-averagePrice {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ff513f;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+  padding: 4px 8px;
+}
+
+.resultItem .resultItem-tagList li {
+    display: inline-block;
+    margin: 0 2px 2px 0
+}
+
+.resultItem .resultItem-saleType {
+    font-size: 14px;
+    line-height: 1;
+    font-family: Raleway;
+    font-weight: 500;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.resultItem .resultItem-saleType:hover {
+    text-decoration: none
+}
+
+.resultItem .resultItem-saleType--specialOffer,
+.resultItem .resultItem-saleType--specialOffer a {
+    color: #e14123
+}
+
+.resultItem .resultItem-saleType--specialOffer a:hover,
+.resultItem .resultItem-saleType--specialOffer:hover {
+    color: #e14123
+}
+
+.resultItem .resultItem-saleType--event,
+.resultItem .resultItem-saleType--event a {
+    color: #b51817
+}
+
+.resultItem .resultItem-saleType--event a:hover,
+.resultItem .resultItem-saleType--event:hover {
+    color: #b51817
+}
+
+.resultItem .resultItem-saleType.resultItem-saleType--attenuated,
+.resultItem .resultItem-saleType.resultItem-saleType--attenuated a {
+    color: #4e4e56
+}
+
+.resultItem .resultItem-rating {
+    width: 114px;
+    border-left: 1px solid #dedede;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.resultItem .resultItem-action {
+    width: 84px;
+    border-left: 1px solid #dedede;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.resultItem .resultItem-rating a {
+    text-decoration: none;
+}
+
+.resultItem .resultItem-rating .ratingTripadvisor {
+    margin-top: 10px
+}
+
+.resultItem .resultItem-rating.resultItem-rating--noTimeSlot {
+    width: 212px;
+    text-align: center;
+    /*padding-right: 98px*/
+}
+
+.resultItem .resultItem-booking {
+    width: 98px;
+    padding: 0 0 0 30px;
+    position: relative;
+    display: table-cell;
+    vertical-align: top
+}
+
+.resultItem .resultItem-booking ul {
+    margin: 0;
+    width: 68px
+}
+
+.resultItem .resultItem-booking li {
+    padding: 0 0 3px
+}
+
+.resultItem .resultItem-booking .resultItem-bookingAvailabilitySentence {
+    font-size: 13px;
+    text-align: right;
+    line-height: 12px;
+    margin-bottom: 12px;
+    color: #e14123;
+    position: relative;
+    width: 120px;
+    left: -50px;
+    font-family: Raleway;
+    font-weight: 500
+}
+
+.resultSeparator {
+    background: #589442 url(../../images/backgrounds/food.png) repeat left -18px;
+    color: #fff;
+    margin: 10px 12px 10px 14px;
+    padding: 30px;
+    position: relative;
+    border-radius: 2px
+}
+
+.resultSeparator:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border: 1em solid transparent;
+    border-bottom-color: #fff;
+    bottom: 0;
+    left: 45px
+}
+
+.rating {
+    font-size: 11px;
+    line-height: 1;
+    font-family: Raleway;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rating .rating-ratingValue {
+    font-size: 28px;
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 600
+}
+
+.rating.rating-small {
+    font-size: 10px
+}
+
+.rating.rating-small .rating-ratingValue {
+    font-size: 16px
+}
+
+.rating.rating--big {
+    font-size: 14px
+}
+
+.rating.rating--big .rating-ratingValue {
+    font-size: 38px
+}
+
+.ratingTripadvisor {
+    display: inline-block;
+    width: 110px;
+    height: 18px
+}
+
+.ratingTripadvisor.ratingTripadvisor--0-0 {
+    background-position: 0 0
+}
+
+.ratingTripadvisor.ratingTripadvisor--0-5 {
+    background-position: 0 -18px
+}
+
+.ratingTripadvisor.ratingTripadvisor--1-0 {
+    background-position: 0 -36px
+}
+
+.ratingTripadvisor.ratingTripadvisor--1-5 {
+    background-position: 0 -54px
+}
+
+.ratingTripadvisor.ratingTripadvisor--2-0 {
+    background-position: 0 -72px
+}
+
+.ratingTripadvisor.ratingTripadvisor--2-5 {
+    background-position: 0 -90px
+}
+
+.ratingTripadvisor.ratingTripadvisor--3-0 {
+    background-position: 0 -108px
+}
+
+.ratingTripadvisor.ratingTripadvisor--3-5 {
+    background-position: 0 -126px
+}
+
+.ratingTripadvisor.ratingTripadvisor--4-0 {
+    background-position: 0 -144px
+}
+
+.ratingTripadvisor.ratingTripadvisor--4-5 {
+    background-position: 0 -162px
+}
+
+.ratingTripadvisor.ratingTripadvisor--5-0 {
+    background-position: 0 -180px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small {
+    width: 92px;
+    height: 15px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--0-0 {
+    background-position: 0 0
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--0-5 {
+    background-position: 0 -15px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--1-0 {
+    background-position: 0 -30px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--1-5 {
+    background-position: 0 -45px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--2-0 {
+    background-position: 0 -60px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--2-5 {
+    background-position: 0 -75px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--3-0 {
+    background-position: 0 -90px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--3-5 {
+    background-position: 0 -105px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--4-0 {
+    background-position: 0 -120px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--4-5 {
+    background-position: 0 -135px
+}
+
+.ratingTripadvisor.ratingTripadvisor--small.ratingTripadvisor--5-0 {
+    background-position: 0 -150px
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .resultItem.resultItem__local {
+        height: 225px !important;
+    }
+
+    .resultItem.resultItem__local .resultItem-averagePrice {
+    position: absolute;
+    right: 0;
+    margin-right: 3.125rem;
+    }
+
+    .resultItem.resultItem__local .resultItem-avatar,
+    .resultItem.resultItem__local .resultItem-information,
+    .resultItem.resultItem__local .resultItem-rating {
+        height: 137px !important;
+    }
+
+    .resultItem.resultItem__local .resultItem-footer {
+        display: block !important;
+    }
+
+    .resultItem.resultItem__local .resultItem-rating {
+        width: 153px !important;
+    }
+    
+    .resultItem.resultItem__local .resultItem-rating button {
+        display: none !important;
+    }
+
+    .resultItem.resultItem__local .rating {
+        margin-bottom: 30px !important;
+    }
+}

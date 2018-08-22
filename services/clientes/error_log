@@ -1,0 +1,4 @@
+[13-Jun-2017 06:20:38 America/Lima] PHP Fatal error:  Class 'PHPMailer' not found in /home/tamboapp/public_html/common/simply_email.php on line 18
+[13-Oct-2017 18:42:05 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::Registrar_Plataforma__StandAlone() in /home/codigofit/public_html/app/services/clientes/clientes-post.php on line 211
+[13-Oct-2017 18:43:11 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::Registrar_Plataforma__StandAlone() in /home/codigofit/public_html/app/services/clientes/clientes-post.php on line 211
+[13-Oct-2017 18:45:03 America/Lima] PHP Fatal error:  Call to undefined method clsUsuario::Registrar_Plataforma__StandAlone() in /home/codigofit/public_html/app/services/clientes/clientes-post.php on line 211

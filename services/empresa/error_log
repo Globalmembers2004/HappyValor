@@ -1,0 +1,6 @@
+[29-Dec-2016 15:18:23 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210
+[29-Dec-2016 15:18:42 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210
+[29-Dec-2016 15:20:20 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210
+[29-Dec-2016 15:24:53 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210
+[29-Dec-2016 15:41:23 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210
+[29-Dec-2016 15:52:15 America/Lima] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8480000 bytes) in /home/tamboapp/public_html/common/functions.php on line 210

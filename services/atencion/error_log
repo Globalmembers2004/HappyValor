@@ -1,0 +1,1 @@
+[01-Nov-2015 23:22:27 America/Lima] PHP Fatal error:  Call to undefined method clsCartaDia::AperturarMenu() in /home/globalmembers/public_html/restoapp/services/atencion/despacho-post.php on line 66

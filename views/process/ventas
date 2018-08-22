@@ -1,0 +1,70 @@
+$ventaMaestroI = array(
+						'tm_idempresa' => $IdEmpresa,
+						'tm_idcentro' => $IdCentro,
+						'tm_iddocumento' => $ddlTipoComprobante,
+						'tm_idformapago' => $ddlFormaPago,
+						'tm_idmoneda' => $hdIdMoneda,
+						'tm_idcliente' => $hdIdCliente,
+						'tm_idpersonal' => $hdIdPersonal,
+						'tm_vserie_documento' => $txtSerieComprobante,
+						'tm_vnumero_documento' => $txtNroComprobante,
+						'tm_fecha_emision' => $txtFechaVenta,
+						'tm_base_imponible' => $hdTotalPedido,
+						'tm_igv' => $hdImpuesto,
+						'tm_total' => $hdTotalPedido,
+						'ta_estadoventa' => '00',
+						'Activo' => 1,
+						'IdUsuarioReg' => $idusuario,
+						'FechaReg' => date("Y-m-d h:i:s"),
+					);
+					$ventaMaestroU = array(
+						'tm_idventa' => $IdVenta, 
+						'IdUsuarioAct' => $idusuario,
+			            'FechaAct' => date("Y-m-d h:i:s")
+					);
+					if ($Id == '0')
+						$ventaMaestro = array_merge($ventaMaestroI, $ventaMaestroU);
+			        else
+			            $ventaMaestro = $ventaMaestroU;
+					$rptaVenta = $objVenta->RegistrarMaestro($ventaMaestro);
+					if ($rptaVenta > 0){
+						if ($IdVenta != '0')
+							$rptaVenta = $IdVenta;
+						$detallePedido = json_decode(stripslashes($_POST['detallePedido']));
+						
+						$strQueryDetVenta = 'INSERT INTO td_venta (';
+						$strQueryDetVenta .= 'tm_idempresa, tm_idcentro, tm_idventa, tm_idproducto, tm_idmoneda, td_precio, td_cantidad, td_subtotal, ';
+						$strQueryDetVenta .= 'Activo, IdUsuarioReg, FechaReg, IdUsuarioAct, FechaAct) VALUES ';
+					    
+					    foreach($detallePedido as $item){
+					    	if ($item->idDetalle == '0'){
+					    		if (strlen($strItemsDetalleVenta) > 0)
+					    			$strItemsDetalleVenta .= ',';
+						    	$strItemsDetalleVenta .= '('.$IdEmpresa.', '.$IdCentro.', '.$rptaVenta.', '.$item->idProducto.', '.$item->idMoneda.', '.$item->precio.', '.$item->cantidad.', '.$item->subTotal.', ';
+						        $strItemsDetalleVenta .= '1, '.$idusuario.', \''.date("Y-m-d h:i:s").'\', '.$idusuario.', \''.date("Y-m-d h:i:s").'\')';
+					    	}
+					    	else {
+					    		if (strlen($strQueryUpdateDetalleVenta) > 0)
+					    			$strQueryUpdateDetalleVenta .= ';';
+					    		$strQueryUpdateDetalleVenta .= 'UPATE td_venta SET';
+					    		$strQueryUpdateDetalleVenta .= ' tm_idmoneda = '.$item->idMoneda;
+					    		$strQueryUpdateDetalleVenta .= ', td_precio = '.$item->precio;
+					    		$strQueryUpdateDetalleVenta .= ', td_cantidad = '.$item->cantidad;
+					    		$strQueryUpdateDetalleVenta .= ', td_subtotal = '.$item->subTotal;
+					    		$strQueryUpdateDetalleVenta .= ' WHERE td_idventa = '.$item->idDetalle;
+					    		++$countExistDetailsVent;
+					    	}
+					    }
+					    if ($countExistDetailsVent > 0){
+					    	$validSQL = $objVenta->ActualizarDetalle($strQueryUpdateDetalleVenta);
+					    	if ($validSQL)
+	                			$rptaDetails = 1;
+					    }
+					    
+					    if (strlen($strItemsDetalleVenta) > 0) {
+					    	$strQueryDetVenta .= $strItemsDetalleVenta;
+					    	$validSQL = $objVenta->RegistrarDetalle($strQueryDetVenta);
+					    	if ($validSQL)
+	                			$rptaDetails = 1;
+	                	}
+					}
