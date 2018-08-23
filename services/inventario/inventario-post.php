@@ -26,16 +26,11 @@ if ($_POST){
 
     if (isset($_POST['btnGuardar'])){
         $hdIdPrimary = (isset($_POST['hdIdPrimary'])) ? $_POST['hdIdPrimary'] : '0';
-        $ddlCenCos = (isset($_POST['ddlCenCos'])) ? $_POST['ddlCenCos'] : '0';
-        $ddlProducto = (isset($_POST['ddlProducto'])) ? $_POST['ddlProducto'] : '0';
-        $periodo = (isset($_POST['periodo'])) ? $_POST['periodo'] : 1;
-        $txtCantEnv = (isset($_POST['txtCantidadEnvi'])) ? $_POST['txtCantidadEnvi'] : '0';
-        $txtCantInv = (isset($_POST['txtCantidadInv'])) ? $_POST['txtCantidadInv'] : '0';
 
         $DetalleConsumo = json_decode(stripslashes($_POST['DetalleConsumo']));
 
         foreach ($DetalleConsumo as $item) {
-            $rpta = $objData->Registrar($hdIdPrimary, 1, 1, $periodo, $ddlCenCos, $ddlCenCos, $item->idproducto, $item->cantenvi, $item->cantinve, $idusuario, $rpta, $titulomsje, $contenidomsje);
+            $rpta = $objData->Registrar($hdIdPrimary, 1, 1, $item->idperiodo, $item->idcentrocosto, $item->idcentrocosto, $item->idproducto, $item->cantenvi, $item->cantinve, $idusuario, $rpta, $titulomsje, $contenidomsje);
         }
     }
     elseif (isset($_POST['btnEliminar'])) {
