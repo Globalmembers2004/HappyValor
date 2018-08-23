@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"perio",
+				"periodo2"
+			],
+			[
+				"pero",
+				"periodo1"
+			],
+			[
+				"per",
+				"periodo2"
+			],
+			[
+				"p",
+				"periodo1"
+			],
+			[
 				"centr",
 				"centroCosto"
 			],
@@ -460,10 +476,6 @@
 				"border-width"
 			],
 			[
-				"p",
-				"password"
-			],
-			[
 				"max",
 				"maxlength\tAttr"
 			],
@@ -502,23 +514,38 @@
 			[
 				"glosa",
 				"glosa_mov"
-			],
-			[
-				"glo",
-				"glosa"
-			],
-			[
-				"nro_",
-				"nro_doc_ref"
-			],
-			[
-				"com",
-				"comprobante"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "scripts/app/admin/inventario-script.js",
+			"settings":
+			{
+				"buffer_size": 18398,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/inventario/inventario-post.php",
+			"settings":
+			{
+				"buffer_size": 1980,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/reenvio/reenvio-post.php",
+			"settings":
+			{
+				"buffer_size": 1697,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -614,18 +641,46 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/User/valorizacion"
+	],
 	"file_history":
 	[
-		"/C/Users/User/valorizacion/services/inventario/inventario-getdetails.php",
+		"/C/Users/User/valorizacion/bussiness/informes.php",
+		"/C/Users/User/valorizacion/services/informes/informes-getdetails.php",
+		"/C/Users/User/valorizacion/services/informes/informes-post.php",
+		"/C/Users/User/valorizacion/services/informes/informes-search.php",
+		"/C/Users/User/valorizacion/views/admin/informes.php",
+		"/D/valorizacion.sql",
+		"/C/xampp/htdocs/valorizacion/Inventario.php",
+		"/C/xampp/htdocs/valorizacion/InformeInventario.php",
+		"/C/Users/User/valorizacion/functions/getVentas.php",
+		"/C/Users/User/valorizacion/conexion.php",
+		"/C/xampp/htdocs/valorizacion/functions/inventario.php",
+		"/C/xampp/htdocs/valorizacion/functions/excel1.php",
+		"/C/xampp/htdocs/valorizacion/functions/getVentas.php",
+		"/C/xampp/htdocs/valorizacion/functions/getAllListsAndVideos.php",
+		"/D/BDValorizacion.sql",
+		"/D/BDhappyland.sql",
+		"/C/Users/User/valorizacion/views/admin/imp-suministro.php",
+		"/C/Users/User/valorizacion/scripts/app/admin/inventario-script.js",
+		"/C/Users/User/valorizacion/.gitignore",
+		"/C/xampp/htdocs/cinadsacenter/services/liquidacion/liquidacion-post.php",
+		"/C/xampp/htdocs/cinadsacenter/services/liquidacion/liquidacion-search.php",
+		"/C/xampp/htdocs/cinadsacenter/dist/js/app/process/liquidacion-script.js",
+		"/C/xampp/htdocs/cinadsacenter/bussiness/liquidacion.php",
+		"/C/xampp/htdocs/cinadsacenter/views/process/liquidacion.php",
+		"/C/xampp/htdocs/cinadsacenter/views/process/cobranza.php",
+		"/C/xampp/htdocs/cinadsacenter/views/process/estadocuenta.php",
 		"/C/Users/User/valorizacion/bussiness/inventario.php",
+		"/C/Users/User/valorizacion/services/inventario/inventario-getdetails.php",
+		"/C/Users/User/valorizacion/views/admin/inventario-list.php",
 		"/C/Users/User/valorizacion/services/inventario/inventario-post.php",
 		"/C/Users/User/valorizacion/services/inventario/inventario-search.php",
-		"/C/Users/User/valorizacion/views/admin/inventario-list.php",
-		"/C/Users/User/valorizacion/scripts/app/admin/inventario-script.js",
 		"/D/valorizacion/INVENTARIIO.csv",
 		"/D/valorizacion/PRODUCTOS.csv",
 		"/C/Users/User/valorizacion/services/suministro/suministro-post.php",
-		"/D/BDValorizacion.sql",
 		"/C/Users/User/valorizacion/services/reenvio/reenvio-post.php",
 		"/C/Users/User/valorizacion/scripts/app/settings/periodo-script.js",
 		"/C/xampp/htdocs/cinadsacenter/views/process/facturacion.php",
@@ -634,14 +689,12 @@
 		"/C/xampp/htdocs/valorizacion/common/init_session.php",
 		"/C/xampp/htdocs/valorizacion/common/contents.php",
 		"/C/xampp/htdocs/valorizacion/scripts/app/admin/imp-suministro-script.js",
-		"/D/valorizacion.sql",
 		"/C/xampp/htdocs/valorizacion/views/admin/imp-suministro-list.php",
 		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-post.php",
 		"/C/xampp/htdocs/valorizacion/bussiness/suministro.php",
 		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-post.php",
 		"/D/valorizacion/COSTO.csv",
 		"/D/producto.sql",
-		"/D/BDhappyland.sql",
 		"/D/valorizacion/tablas_adicionales.sql",
 		"/D/consolidado.sql",
 		"/D/valorizacion/CENTROCOSTO.csv",
@@ -721,29 +774,7 @@
 		"/C/xampp/htdocs/happyland/ParaLibro.html",
 		"/C/xampp/htdocs/happyland/procesar.php",
 		"/C/xampp/htdocs/happyland/Consolidado.php",
-		"/D/libro.sql",
-		"/C/xampp/htdocs/globalmembers/index.php",
-		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-search.php",
-		"/C/xampp/htdocs/valorizacion/services/centrocosto/centrocosto-search.php",
-		"/C/xampp/htdocs/valorizacion/bussiness/centrocosto.php",
-		"/C/xampp/htdocs/cinadsacenter/dist/js/app/admin/concepto-script.js",
-		"/C/xampp/htdocs/cinadsacenter/dist/js/app/process/presupuesto-script.js",
-		"/C/xampp/htdocs/amafit/app/views/admin/rutinagym-list.php",
-		"/C/xampp/htdocs/amafit/app/views/settings/rutinagym.php",
-		"/C/xampp/htdocs/amafit/app/views/settings/rutinagrupal.php",
-		"/C/xampp/htdocs/amafit/app/views/admin/rutinacliente-list.php",
-		"/C/xampp/htdocs/amafit/app/views/admin/equipo-list.php",
-		"/C/xampp/htdocs/amafit/app/views/admin/clasescliente-list.php",
-		"/C/xampp/htdocs/valorizacion/bussiness/centro.php",
-		"/C/xampp/htdocs/happyland/services/consolidado/consolidado-post.php",
-		"/C/xampp/htdocs/happyland/bussiness/consolidado.php",
-		"/D/migracionHappy.sql",
-		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-search.php",
-		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-getdetails.php",
-		"/C/xampp/htdocs/cinadsacenter/views/admin/conceptoescalonable.php",
-		"/C/xampp/htdocs/cinadsacenter/views/admin/facturacionmaestro.php",
-		"/C/xampp/htdocs/foodmap/main.js",
-		"/C/xampp/htdocs/foodmap/data.js"
+		"/D/libro.sql"
 	],
 	"find":
 	{
@@ -762,6 +793,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Guardar",
+			"soft",
+			"usuario_listar",
+			"DEFINER=`root`@`localhost` ",
 			"data-iddetalle",
 			"gvDatos",
 			"tableConcepto",
@@ -885,11 +920,7 @@
 			"hdMes",
 			"hdAnho",
 			"Propiedad",
-			"tablePropiedad",
-			"CalculoConsumo",
-			"fechaini",
-			"lecturaanterior",
-			"propiedad"
+			"tablePropiedad"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -996,8 +1027,99 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scripts/app/admin/inventario-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16465,
+								16642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10348.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "services/inventario/inventario-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1242,
+								1242
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "services/reenvio/reenvio-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								735,
+								735
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1044,7 +1166,7 @@
 	"project": "Modulos.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1054,12 +1176,44 @@
 		"selected_items":
 		[
 			[
-				"suministr",
-				"bussiness\\suministro.php"
+				"reenvio-po",
+				"services\\reenvio\\reenvio-post.php"
+			],
+			[
+				"inventar",
+				"services\\inventario\\inventario-post.php"
+			],
+			[
+				"inventario",
+				"scripts\\app\\admin\\inventario-script.js"
+			],
+			[
+				"get",
+				"functions\\getVentas.php"
+			],
+			[
+				"conex",
+				"conexion.php"
+			],
+			[
+				"suministro",
+				"views\\admin\\imp-suministro-list.php"
 			],
 			[
 				"suminis",
-				"services\\suministro\\suministro-post.php"
+				"views\\admin\\imp-suministro.php"
+			],
+			[
+				"sumini",
+				"bussiness\\suministro.php"
+			],
+			[
+				"inven",
+				"services\\inventario\\inventario-getdetails.php"
+			],
+			[
+				"suministr",
+				"bussiness\\suministro.php"
 			],
 			[
 				"periodo",
@@ -1074,10 +1228,6 @@
 				"scripts\\app\\admin\\imp-suministro-script.js"
 			],
 			[
-				"inven",
-				"scripts\\app\\admin\\inventario-script.js"
-			],
-			[
 				"inventa",
 				"bussiness\\inventario.php"
 			],
@@ -1086,20 +1236,12 @@
 				"services\\inventario\\inventario-post.php"
 			],
 			[
-				"suministro",
-				"services\\suministro\\suministro-post.php"
-			],
-			[
 				"familia",
 				"services\\familia\\familia-post.php"
 			],
 			[
 				"sum",
 				"bussiness\\suministro.php"
-			],
-			[
-				"sumini",
-				"services\\suministro\\suministro-post.php"
 			],
 			[
 				"imp-sumi",
@@ -1234,10 +1376,6 @@
 				"services\\periodo\\periodo-post.php"
 			],
 			[
-				"inventar",
-				"services\\inventario\\inventario-post.php"
-			],
-			[
 				"reenvio",
 				"services\\reenvio\\reenvio-post.php"
 			],
@@ -1264,10 +1402,6 @@
 			[
 				"centrocosto-sear",
 				"services\\centrocosto\\centrocosto-search.php"
-			],
-			[
-				"inventario",
-				"bussiness\\inventario.php"
 			],
 			[
 				"imp",
@@ -1552,18 +1686,6 @@
 			[
 				"orige-li",
 				"views\\admin\\origen-list.php"
-			],
-			[
-				"enlace-scr",
-				"scripts\\app\\admin\\enlaces-script.js"
-			],
-			[
-				"cambio-",
-				"scripts\\app\\admin\\cambio-script.js"
-			],
-			[
-				"libroventas",
-				"services\\libroventas\\libroventas-post.php"
 			]
 		],
 		"width": 0.0

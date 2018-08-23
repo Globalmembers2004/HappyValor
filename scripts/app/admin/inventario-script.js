@@ -226,6 +226,8 @@ function BuscarDatos (pagina, centrocosto) {
                 while(i < countdata){
                     var idinventario = data[i].tm_idinventario;
                     var idproducto = data[i].tm_idproducto;
+                    var idcentrocosto = data[i].tm_idcencosto_ori;
+                    var idperiodo = data[i].tm_idperiodo;                    
                     strhtml += '<tr>';
                     strhtml += '<td class="hidden">'+idinventario +'</td>';
                     strhtml += '<td class="align-left">'+data[i].Producto +'</td>';
@@ -233,7 +235,7 @@ function BuscarDatos (pagina, centrocosto) {
                     strhtml += '<td class="align-center">'+data[i].tm_cant_envi +'</td>';
                     strhtml += '<td class="align-center"><input class="validate" id="txtInventario'+i+'" class="inputTextInTable align-right" value="'+data[i].tm_cant_inve +'" type="text"/></td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_cons +'</td>';
-                    strhtml += '<td class="align-center"><button data-idproducto="'+idproducto+'" data-idinventario="'+idinventario+'" type="button id="cambio'+i+'">Redirigir</button></td>';
+                    strhtml += '<td class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
                     strhtml += '</tr>';
                     ++i;
                 };
@@ -571,7 +573,9 @@ function RegistrarInventario () {
     if (countdata > 0){
         while (i < countdata){
             var iditem = gvDatos.rows[i].getAttribute('data-iddetalle');
-            var idpropducto = gvDatos.rows[i].getAttribute('data-idinventario');
+            var idproducto = gvDatos.rows[i].getAttribute('data-idproducto');
+            var idcentrocosto = gvDatos.rows[i].getAttribute('data-idcentrocosto');
+            var idperiodo = gvDatos.rows[i].getAttribute('data-idperiodo');
             var cantante = gvDatos.rows[i].cells[1].innerText;
             var cantenvi = gvDatos.rows[i].cells[2].innerText;
             var cantinve = gvDatos.rows[i].cells[3].childNodes[0].value;
