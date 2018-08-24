@@ -15,11 +15,11 @@ class clsInventario
 		return $rs;
 	}
 
-	function Registrar($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantenv, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
+	function Registrar($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
 	{
 		$bd = $this->objData;
 		$sp_name = 'pa_inventario_registrar';
-		$result = $bd->exec_sp_iud($sp_name, array($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantenv, $cantinv, $idusuario), '@rpta, @titulomsje, @contenidomsje');
+		$result = $bd->exec_sp_iud($sp_name, array($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario), '@rpta, @titulomsje, @contenidomsje');
 		$rpta = $result[0]['@rpta'];
 		$titulomsje = $result[0]['@titulomsje'];
 		$contenidomensaje = $result[0]['@contenidomsje'];

@@ -183,7 +183,7 @@ function GoToEdit (idItem, idproducto) {
                 ListarCenCosDes_Combo('0', centroOrigen);                        
                 if (data.length > 0){
                   
-                    ListarCenCosDes_Combo(data[0].tm_idcencosto_des);                        
+                    ListaerCenCosDes_Combo(data[0].tm_idcencosto_des);                        
                     
                     $('#ddlCenCosDes').val(data[0].tm_idcencosto_des);
 
@@ -229,10 +229,12 @@ function BuscarDatos (pagina, centrocosto) {
                     var idcentrocosto = data[i].tm_idcencosto_ori;
                     var idperiodo = data[i].tm_idperiodo;                    
                     strhtml += '<tr>';
-                    strhtml += '<td class="hidden">'+idinventario +'</td>';
+                    strhtml += '<td class="hidden" data-iddetalle=">'+idinventario +'"</td>';
                     strhtml += '<td class="align-left">'+data[i].Producto +'</td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_ant +'</td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_envi +'</td>';
+                    strhtml += '<td class="align-center">'+data[i].tm_cant_reen +'</td>';
+                    strhtml += '<td class="align-center">'+data[i].tm_cant_reci +'</td>';
                     strhtml += '<td class="align-center"><input class="validate" id="txtInventario'+i+'" class="inputTextInTable align-right" value="'+data[i].tm_cant_inve +'" type="text"/></td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_cons +'</td>';
                     strhtml += '<td class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
@@ -276,11 +278,6 @@ function AdicionarReenvio() {
     strhtml += '</tr>';
 
     $("#gvDetalle tbody").append(strhtml);
-
-}
-
-
-function guardarReenvios() {
 
 }
 
@@ -492,8 +489,11 @@ function ListarCenCosDes_Combo (idcencos_default, idcencos_origen) {
 }
 
 
-function DetalleReenvio (centrodes, cantidad) {
+function DetalleReenvio (idperiodo, centroori, centrodes, idproducto, cantidad) {
+    this.idperiodo = idperiodo;
+    this.centroori = centroori;
     this.centrodes = centrodes;
+    this.idproducto = idproducto;
     this.cantidad = cantidad;
 }
 
@@ -507,15 +507,15 @@ function RegistrarReenvio () {
     var countdata = gvDatos.rows.length;
     var listDetalle = [];
     var detalleReenvio = '';
+    var idperiodo = document.getElementById("ddlCenCos").value;
     var centroori = document.getElementById("ddlCenCos").value;
-    var centrodes = document.getElementById("ddlCenCosDes").value;    
     var idproducto = document.getElementById("hdIdProducto").value;    
     var idinventario = document.getElementById("hdIdInventario").value;    
     if (countdata > 0){
         while (i < countdata){
             var centrodes = gvDatos.rows[i].getAttribute('data-idcentrodes');
             var cantidad = gvDatos.rows[i].cells[1].innerText;
-            var detalle = new DetalleReenvio(centrodes, cantidad);
+            var detalle = new DetalleReenvio(idperiodo, centroori, centrodes, idproducto, cantidad);
             listDetalle.push(detalle);
             ++i;
         };
@@ -549,13 +549,18 @@ function RegistrarReenvio () {
 }
 
 
-function DetalleInventario (iditem, idproducto, cantante, cantenvi, cantinve, cantcons) {
+function DetalleInventario (iditem, idperiodo, idcentrocosto, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons,valocons) {
     this.iditem = iditem;
+    this.idperiodo = idperiodo;
+    this.idcentrocosto = idcentrocosto;
     this.idproducto = idproducto;
     this.cantante = cantante;
     this.cantenvi = cantenvi;
+    this.cantreci = cantreci;    
+    this.cantreen = cantreen;
     this.cantinve = cantinve;
     this.cantcons = cantcons;
+    this.valocons = valocons;
 }
 
 function RegistrarInventario () {
@@ -578,10 +583,13 @@ function RegistrarInventario () {
             var idperiodo = gvDatos.rows[i].getAttribute('data-idperiodo');
             var cantante = gvDatos.rows[i].cells[1].innerText;
             var cantenvi = gvDatos.rows[i].cells[2].innerText;
-            var cantinve = gvDatos.rows[i].cells[3].childNodes[0].value;
-            var cantcons = gvDatos.rows[i].cells[5].innerText;
+            var cantreci = gvDatos.rows[i].cells[3].innerText;
+            var cantreen = gvDatos.rows[i].cells[4].innerText;
+            var cantinve = gvDatos.rows[i].cells[5].childNodes[0].value;
+            var cantcons = gvDatos.rows[i].cells[6].innerText;
+            var valocons = gvDatos.rows[i].cells[7].innerText;
 
-            var detalle = new DetalleInventario(iditem, idproducto, cantante, cantenvi, cantinve, cantcons);
+            var detalle = new DetalleInventario(iditem, idperiodo,idcentrocosto, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons, valocons);
             listDetalle.push(detalle);
 
             ++i;

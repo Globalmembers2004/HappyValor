@@ -39,11 +39,13 @@
                             <table>                        
                              <thead>
                                 <tr>
-                                  <th class="align-center">Producto</th>
-                                  <th class="align-center">Saldo anterior</th>
-                                  <th class="align-center">Cantidad enviada</th>
-                                  <th class="align-center">Inventario</th>
-                                  <th class="align-center">Consumo</th>
+                                  <th class="align-right">Producto</th>
+                                  <th class="align-right">Saldo anterior</th>
+                                  <th class="align-right">Cantidad enviada</th>
+                                  <th class="align-right">Cantidad reenviada</th>
+                                  <th class="align-right">Cantidad recibida</th>
+                                  <th class="align-right">Inventario</th>
+                                  <th class="align-right">Consumo</th>
                                   <th></th>
                                 </tr>
                               </thead>

@@ -63,7 +63,8 @@ $(function () {
 function LimpiarForm () {
     $('#hdIdPrimary').val('0');
     $('#txtCentroCosto').val('');
-    $('#txtNombre').val('').focus();
+    $('#txtNombre').val('');
+    $('#txtDescripcion').val('').focus();
 }
 
 function MostrarDatos () {
@@ -89,7 +90,7 @@ function MostrarDatos () {
                     
                     strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + data[i].tm_idcencosto + '" />';
 
-                    strhtml += '<span class="mdl-list__item-primary-content"> Código :'+ data[i].tm_cencos_star  + ' - '+ data[i].tm_descripcion + '</span>';
+                    strhtml += '<span class="mdl-list__item-primary-content"> Código :'+ data[i].tm_cencos_star  + ' - '+ data[i].tm_descripcion + ' ---------- '+ ' NOMBRE EN INTERCARD: '+ data[i].tm_nombre +'</span>';
                     strhtml += '<div class="grouped-buttons place-bottom-right padding5 margin5"><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="edit" data-delay="50" data-position="bottom" title="Editar" data-tooltip="Editar"><i class="material-icons">&#xE254;</i></a><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="delete" data-delay="50" data-position="bottom" title="Eliminar" data-tooltip="Eliminar"><i class="material-icons">&#xE872;</i></a></div>';
                     strhtml += '</li>';
                     ++i;
@@ -153,7 +154,8 @@ function GetDataById (idData) {
                 success: function (data) {
                     if (data.length > 0) {
                         $('#hdIdPrimary').val(data[0].tm_idcencosto);
-                        $('#txtNombre').val(data[0].tm_descripcion);
+                        $('#txtNombre').val(data[0].tm_nombre);
+                        $('#txtDescripcion').val(data[0].tm_descripcion);
                         $('#txtCentroCosto').val(data[0].tm_cencos_star);
                         Materialize.updateTextFields();
                     };

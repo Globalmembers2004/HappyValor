@@ -32,8 +32,9 @@ if ($_POST){
     if (isset($_POST['btnGuardar'])){
         $txtNombre = $_POST['txtNombre'];
         $txtCentroCosto = $_POST['txtCentroCosto'];
+        $txtDescripcion = $_POST['txtDescripcion'];
 
-        $rpta = $objData->Registrar($hdIdPrimary, $IdEmpresa, $IdCentro, $txtCentroCosto, $txtNombre, $idusuario, $rpta, $titulomsje, $contenidomsje);
+        $rpta = $objData->Registrar($hdIdPrimary, $IdEmpresa, $IdCentro, $txtCentroCosto, $txtDescripcion, $txtNombre, $idusuario, $rpta, $titulomsje, $contenidomsje);
     }
     elseif (isset($_POST['btnEliminar']))
         

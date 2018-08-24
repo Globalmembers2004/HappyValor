@@ -1,9 +1,9 @@
 <?php
-class clsSuministro
+class clsVentas
 {
 	private $objData;
 	
-	function clsSuministro()
+	function clsVentas()
 	{
 		$this->objData = new Db();
 	}
@@ -19,14 +19,14 @@ class clsSuministro
 	function Listar($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina)
 	{
 		$bd = $this->objData;
-		$rs = $bd->exec_sp_select('pa_suministros_listar', array($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina));
+		$rs = $bd->exec_sp_select('pa_impventas_listar', array($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina));
 		return $rs;
 	}
 
-	function ImportarProducto($codigo,$familia,$descripcion)
+	function ImportarFamilia($codigo,$familia,$descripcion)
 	{
 		$bd = $this->objData;
-		$sql = "INSERT into tmp_productos (cod_starsoft,tm_familia,tm_descripcion) values ('".$codigo."','".$familia."','".$descripcion."')";
+		$sql = "INSERT into tmp_familia (cod_starsoft,tm_familia,tm_descripcion) values ('".$codigo."','".$familia."','".$descripcion."')";
 		$result = $bd->ejecutar($sql);
 		return $result;
 	}

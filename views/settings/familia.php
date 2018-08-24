@@ -46,7 +46,7 @@
                     </div>                    
                     <div class="col-sm-12">
                       <input type="checkbox" class="filled-in" id="chkEditable" name="chkEditable" checked value="1" />
-                      <label for="chkEditable"><?php $translate->__('¿Esta familia es editable por Centro de Costo?'); ?></label>
+                      <label for="chkEditable"><?php $translate->__('¿Chequear si se edita en el Inventario?'); ?></label>
                     </div>
                 </div>
             </div>

@@ -84,7 +84,7 @@ if ($_POST){
                     }
                     $rpta_im[] = $objData->AdicionarCosto($ddlPeriodo);
                     break;
-                case 'tmp_inventario':
+                case 'tmp_envio':
                     $rpta_im[] = $objData->BorrarTabla('tmp_inventario');
                     foreach ($lines as $line) {
                         $array = str_getcsv($line);
@@ -93,6 +93,16 @@ if ($_POST){
                         }
                     }
                     $rpta_im[] = $objData->AdicionarInventario($ddlPeriodo);
+                    break;
+                case 'tmp_inventario':
+                    $rpta_im[] = $objData->BorrarTabla('tmp_inventario');
+                    foreach ($lines as $line) {
+                        $array = str_getcsv($line);
+                        if ($array[0] <>''){
+                            $rpta_im[] = $objData->ImportarInventario($array[0],$array[1],$ddlPeriodo,$array[2]);
+                        }
+                    }
+                    $rpta_im[] = $objData->InventarioInicial($ddlPeriodo);
                     break;
             }
             /*

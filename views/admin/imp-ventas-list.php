@@ -6,7 +6,7 @@
         <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header mdl-layout__header light-green --waterfall">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Importar tablas</span>
+                    <span class="mdl-layout-title">Importar tablas de Ventas</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnSearch" data-type="search">
                         <i class="material-icons">&#xE8B6;</i>
@@ -67,16 +67,26 @@
                 <div class="row all-height pos-rel form-photo no-margin">
                     <div class="cell colspan6 all-height body-on-phone no-footer mdl-shadow--4dp">
                         <div class="scrollbarra padding20">
-                            <div class="col-sm-12 cmb_periodo">
+                            <div class="col-sm-12">
+                                <label class="active" for="ddlTabla"><?php $translate->__('Tabla Maestra'); ?></label>
+                                <select id="ddlTabla" name="ddlTabla" style="width: 100%;" class="browser-default">
+                                    <option value="0">Seleccione</option>
+                                    <option value="tmp_familia">Familia Ventas</option>
+                                    <option value="tmp_productos">Productos Venta</option>
+                                    <option value="tmp_canje">Ventas Canje</option>
+                                    <option value="tmp_otros">Ventas otros</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 cmb_periodo hide">
                                 <label class="active" for="ddlPeriodo"><?php $translate->__('Periodo'); ?></label>
                                 <select id="ddlPeriodo" name="ddlPeriodo" style="width: 100%;" class="browser-default">
                                     <option value="0">Seleccione</option>
                                 </select>
                             </div>
                             <div class="input-field col-sm-12">
-                                <input class="validate" id="txtDescripcion" name="txtDescripcion" type="botton" placeholder="Ingrese Descripcion" />
-                                <label for="txtDescripcion"><?php $translate->__('Descripcion'); ?></label>
-                            </div> 
+                                <label for="txtFile" class="active"><?php $translate->__('Archivo a importar'); ?></label>
+                                <input class="" required id="txtFile" name="txtFile" type="file"/>
+                            </div>
                         </div>
                     </div>
                 </div>

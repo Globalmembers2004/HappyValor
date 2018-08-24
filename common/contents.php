@@ -26,13 +26,15 @@ $p_logout = "logout.php";
 /******************/
 /******ADMIN****/
 $p_cambio = "cambio-$op.php";
+$p_informes = "informes-$op.php";
+
 $p_enlaces = "enlaces-$op.php";
 $p_productos = "productos-$op.php";
 $p_migtab = "imp-suministro-$op.php";
 $p_migtabmen = "imp-mensual-$op.php";
 $p_libroventas = "libroventas-$op.php";
 $p_cliente = "cliente-$op.php";
-$p_origen = "origen-$op.php";
+$p_ventas = "imp-ventas-$op.php";
 $p_rutinasocio = "rutinasocio-$op.php";
 $p_seguimiento = "seguimiento-$op.php";
 $p_claseseparada = "claseseparada-$op.php";
@@ -165,9 +167,9 @@ elseif ($pag == "admin") {
         $subcontent = $p_dietagym;
         $scripts = '<script src="scripts/scale-image.min.js"></script><script src="scripts/upload-photo-script.min.js"></script><script src="scripts/app/admin/dieta-script.js"></script>';
     }
-    elseif ($subpag == "origen"){
-        $subcontent = $p_origen;
-        $scripts = '<script src="scripts/scale-image.js"></script><script src="scripts/upload-photo-script.js"></script><script src="scripts/app/admin/origen-script.js"></script>';
+    elseif ($subpag == "imp-ventas"){
+        $subcontent = $p_ventas;
+        $scripts = '<script src="scripts/app/admin/imp-ventas-script.js"></script>';
     }
     elseif ($subpag == "cliente"){
         $subcontent = $p_cliente;
@@ -190,9 +192,9 @@ elseif ($pag == "admin") {
         $subcontent = $p_enlaces;
         $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/enlaces-script.js"></script>';
     }
-    elseif ($subpag == "cambio"){
-        $subcontent = $p_cambio;
-        $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/cambio-script.js"></script>';
+    elseif ($subpag == "informes"){
+        $subcontent = $p_informes;
+        $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/informes-script.js"></script>';
     }
 
     elseif ($subpag == "seguimiento"){

@@ -13,21 +13,15 @@ $(function () {
     $('#ddlTabla').on('change', function (event) {
         event.preventDefault();
         var val = $(this).val();
-        if(val == "tmp_productos")
-        	$(".cmb_periodo").addClass('hide');
         if(val == "tmp_familia")
         	$(".cmb_periodo").addClass('hide');
-        if(val == "0")
-        	$(".cmb_periodo").addClass('hide');
-        if(val == "tmp_centrocosto")
+        if(val == "tmp_productos")
         	$(".cmb_periodo").addClass('hide');
 
-        if(val == "tmp_costo_producto")
+        if(val == "tmp_canje")
         	$(".cmb_periodo").removeClass('hide');
-        if(val == "tmp_inventario")
+        if(val == "tmp_otros")
         	$(".cmb_periodo").removeClass('hide');
-        if(val == "tmp_envio")
-            $(".cmb_periodo").removeClass('hide');
     });
 
     $('#form1').validate({
@@ -75,25 +69,12 @@ function GoToEdit (idItem) {
         else {
             $.ajax({
                 type: "GET",
-                url: 'services/suministro/suministro-getdetails.php',
+                url: 'services/impventas/impventas-getdetails.php',
                 cache: false,
                 dataType: 'json',
                 data: 'id=' + idItem,
                 success: function (data) {
                     if (data.length > 0){
-                    	/*
-                        $('#hdIdPrimary').val(data[0].tm_idinventario);
-                                             
-                        
-                        $('#ddlCenCos').val(data[0].tm_idcencosto);
-                        $('#ddlProducto').val(data[0].tm_idproducto);
-
-                        $('#txtCantidadAnt').val(data[0].tm_cant_ante);
-                        $('#txtCantidadEnvi').val(data[0].tm_cant_envi);
-                        $('#txtCantidadDevu').val(data[0].tm_cant_devu);
-                        $('#txtCantidadInv').val(data[0].tm_cant_inve);
-                        $('#txtCantidadCons').val(data[0].tm_cant_cons);
-                      */
 
                         Materialize.updateTextFields();
                     };
@@ -118,29 +99,10 @@ function GuardarDatos () {
 
         data.append('btnGuardar', 'btnGuardar')
 
-            // {
-            // ListarTipoFamilia_Combo('0');
-
-            // $('#ddlTipoFamilia').focus();
-
-            // precargaExp(selectorModal, false);
-            // }
-
-        ;
-        // data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
-        // data.append('archivo', file);
-
-        /*
-        var input_data = $('#pnlForm :input').serializeArray();
-
-        Array.prototype.forEach.call(input_data, function(fields){
-            data.append(fields.name, fields.value);
-        });
-        */
 
         $.ajax({
             type: "POST",
-            url: 'services/suministro/suministro-post.php',
+            url: 'services/impventas/impventas-post.php',
             contentType:false,
             processData:false,
             cache: false,

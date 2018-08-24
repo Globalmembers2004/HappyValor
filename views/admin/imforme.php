@@ -67,16 +67,31 @@
                 <div class="row all-height pos-rel form-photo no-margin">
                     <div class="cell colspan6 all-height body-on-phone no-footer mdl-shadow--4dp">
                         <div class="scrollbarra padding20">
-                            <div class="col-sm-12 cmb_periodo">
+                            <div class="col-sm-12">
+                                <label class="active" for="ddlTabla"><?php $translate->__('Tabla Maestra'); ?></label>
+                                <select id="ddlTabla" name="ddlTabla" style="width: 100%;" class="browser-default">
+                                    <option value="0">Seleccione</option>
+                                    <option value="tmp_familia">Familia</option>
+                                    <option value="tmp_centrocosto">Centro de Costo</option>
+                                    <option value="tmp_productos">Productos</option>
+                                    <option value="tmp_costo_producto">Costo por Producto</option>
+                                    <option value="tmp_inventario">Inventario</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 cmb_periodo hide">
                                 <label class="active" for="ddlPeriodo"><?php $translate->__('Periodo'); ?></label>
                                 <select id="ddlPeriodo" name="ddlPeriodo" style="width: 100%;" class="browser-default">
                                     <option value="0">Seleccione</option>
                                 </select>
                             </div>
-                            <div class="input-field col-sm-12">
-                                <input class="validate" id="txtDescripcion" name="txtDescripcion" type="botton" placeholder="Ingrese Descripcion" />
+<!--                             <div class="input-field col-sm-12">
+                                <input class="validate" id="txtDescripcion" name="txtDescripcion" type="text" placeholder="Ingrese Descripcion" />
                                 <label for="txtDescripcion"><?php $translate->__('Descripcion'); ?></label>
                             </div> 
+ -->                            <div class="input-field col-sm-12">
+                                <label for="txtFile" class="active"><?php $translate->__('Archivo a importar'); ?></label>
+                                <input class="" required id="txtFile" name="txtFile" type="file"/>
+                            </div>
                         </div>
                     </div>
                 </div>

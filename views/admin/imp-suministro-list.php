@@ -4,7 +4,7 @@
     <input type="hidden" id="hdIdCentro" name="hdIdCentro" value="<?php echo $IdCentro; ?>" />
     <div class="page-region">
         <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header mdl-layout__header light-green --waterfall">
+            <header class="mdl-layout__header mdl-layout__header orange --waterfall">
                 <div class="mdl-layout__header-row">
                     <span class="mdl-layout-title">Importar tablas</span>
                     <div class="mdl-layout-spacer"></div>
@@ -47,7 +47,7 @@
         <input type="hidden" id="hdIdPrimary" name="hdIdPrimary" value="0" />
         <input type="hidden" id="hdFoto" name="hdFoto" value="no-set" />
         <div class="modal-example-header no-padding mdl-layout--fixed-header">
-            <header class="mdl-layout__header light-green">
+            <header class="mdl-layout__header orange">
                 <div class="mdl-layout__header-row">
                     <span class="mdl-layout-title">Importar tablas</span>
                     <div class="mdl-layout-spacer"></div>
@@ -75,7 +75,8 @@
                                     <option value="tmp_centrocosto">Centro de Costo</option>
                                     <option value="tmp_productos">Productos</option>
                                     <option value="tmp_costo_producto">Costo por Producto</option>
-                                    <option value="tmp_inventario">Inventario</option>
+                                    <option value="tmp_inventario">Inventario Inicial</option>
+                                    <option value="tmp_envio">Envio a Centros de Costo</option>                                    
                                 </select>
                             </div>
                             <div class="col-sm-12 cmb_periodo hide">

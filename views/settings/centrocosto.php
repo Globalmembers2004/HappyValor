@@ -28,8 +28,8 @@
             <div class="scrollbarra padding20">
                 <div class="row no-margin">
                     <div class="input-field">
-                        <input id="txtNombre" name="txtNombre" type="text" placeholder="Ingrese descripción" />
-                        <label for="txtNombre"><?php $translate->__('Descripción'); ?></label>
+                        <input id="txtDescripcion" name="txtDescripcion" type="text" placeholder="Ingrese descripción en Starsoft" />
+                        <label for="txtDescripcion"><?php $translate->__('Descripción'); ?></label>
                     </div>
                 </div>
 
@@ -39,6 +39,14 @@
                         <label for="txtCentroCosto"><?php $translate->__('Centro Costo StartSoft'); ?></label>
                     </div>
                 </div>
+
+                <div class="row no-margin">
+                    <div class="input-field">
+                        <input id="txtNombre" name="txtNombre" type="text" placeholder="Ingrese Nombre en InterCard" />
+                        <label for="txtNombre"><?php $translate->__('Nombre en InterCard'); ?></label>
+                    </div>
+                </div>
+
 
             </div>
         </div>

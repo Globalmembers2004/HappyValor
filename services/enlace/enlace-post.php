@@ -30,11 +30,11 @@ if ($_POST){
     $hdIdPrimary = $_POST['hdIdPrimary'];
 
     if (isset($_POST['btnGuardar'])){
-        $ddlTipoFamilia = (isset($_POST['ddlTipoFamilia'])) ? $_POST['ddlTipoFamilia'] : '';
-        $txtNombre = (isset($_POST['txtNombre'])) ? $_POST['txtNombre'] : '';
-        $txtCodigoStart = (isset($_POST['txtCodigoStar'])) ? $_POST['txtCodigoStar'] : '';
+        $idtipofamilia = (isset($_POST['ddlTipoFamilia'])) ? $_POST['ddlTipoFamilia'] : '';
+        $idcencosto = (isset($_POST['ddlCenCos'])) ? $_POST['ddlCenCos'] : '';
+        $idctactb = (isset($_POST['ddlCtaCtb'])) ? $_POST['ddlCtaCtb'] : '';
         
-        $rpta = $objData->Registrar($hdIdPrimary, $IdEmpresa, $IdCentro, $txtCodigoStart, $ddlTipoFamilia, $txtNombre, $idusuario, $rpta, $titulomsje, $contenidomsje);
+        $rpta = $objData->Registrar($hdIdPrimary, $IdEmpresa, $IdCentro, $idcencosto, $idtipofamilia, $idctactb, $idusuario, $rpta, $titulomsje, $contenidomsje);
     }
     elseif (isset($_POST['btnEliminar']))
             $objData->EliminarStepByStep($hdIdPrimary, $idusuario, $rpta, $titulomsje, $contenidomsje);

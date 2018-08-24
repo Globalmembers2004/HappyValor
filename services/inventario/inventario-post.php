@@ -30,7 +30,7 @@ if ($_POST){
         $DetalleConsumo = json_decode(stripslashes($_POST['DetalleConsumo']));
 
         foreach ($DetalleConsumo as $item) {
-            $rpta = $objData->Registrar($hdIdPrimary, 1, 1, $item->idperiodo, $item->idcentrocosto, $item->idcentrocosto, $item->idproducto, $item->cantenvi, $item->cantinve, $idusuario, $rpta, $titulomsje, $contenidomsje);
+            $rpta = $objData->Registrar($hdIdPrimary, 1, 1, $item->idperiodo, $item->idcentrocosto, $item->idcentrocosto, $item->idproducto, $item->cantante, $item->cantenvi, $item->cantreen, $item->cantreci, $item->cantinve, $item->cantcons, $idusuario, $rpta, $titulomsje, $contenidomsje);
         }
     }
     elseif (isset($_POST['btnEliminar'])) {

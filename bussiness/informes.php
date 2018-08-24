@@ -1,9 +1,9 @@
 <?php
-class clsSuministro
+class clsInformes
 {
 	private $objData;
 	
-	function clsSuministro()
+	function clsInformes()
 	{
 		$this->objData = new Db();
 	}
@@ -16,12 +16,20 @@ class clsSuministro
 		return $result;
 	}
 
-	function Listar($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina)
+	function Listar($periodo1, $periodo2)
+	{
+		$bd = $this->objData;
+		$rs = $bd->exec_sp_select('pa_inventario_reporte', array($periodo1, $periodo2));
+		return $rs;
+	}
+
+	function Listar1($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina)
 	{
 		$bd = $this->objData;
 		$rs = $bd->exec_sp_select('pa_suministros_listar', array($tipo, $idempresa, $idcentro, $idperiodo, $idcencosto, $id, $criterio, $pagina));
 		return $rs;
 	}
+
 
 	function ImportarProducto($codigo,$familia,$descripcion)
 	{

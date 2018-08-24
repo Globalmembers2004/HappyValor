@@ -10,26 +10,6 @@ $(function () {
         GuardarDatos();
     });
 
-    $('#ddlTabla').on('change', function (event) {
-        event.preventDefault();
-        var val = $(this).val();
-        if(val == "tmp_productos")
-        	$(".cmb_periodo").addClass('hide');
-        if(val == "tmp_familia")
-        	$(".cmb_periodo").addClass('hide');
-        if(val == "0")
-        	$(".cmb_periodo").addClass('hide');
-        if(val == "tmp_centrocosto")
-        	$(".cmb_periodo").addClass('hide');
-
-        if(val == "tmp_costo_producto")
-        	$(".cmb_periodo").removeClass('hide');
-        if(val == "tmp_inventario")
-        	$(".cmb_periodo").removeClass('hide');
-        if(val == "tmp_envio")
-            $(".cmb_periodo").removeClass('hide');
-    });
-
     $('#form1').validate({
         lang: 'es',
         errorElement : 'div',
@@ -64,9 +44,14 @@ function GoToEdit (idItem) {
 
         if (idItem == '0'){
             {
-            ListarPeriodo_Combo('0');
+            ListarPeriodo_Combo1('0');
 
-            $('#ddlPeriodo').focus();
+            $('#ddlPeriodo1').focus();
+
+            ListarPeriodo_Combo2('0');
+
+            $('#ddlPeriodo2').focus();
+
 
             precargaExp(selectorModal, false);
             }
@@ -75,26 +60,12 @@ function GoToEdit (idItem) {
         else {
             $.ajax({
                 type: "GET",
-                url: 'services/suministro/suministro-getdetails.php',
+                url: 'services/informes/informes-getdetails.php',
                 cache: false,
                 dataType: 'json',
                 data: 'id=' + idItem,
                 success: function (data) {
                     if (data.length > 0){
-                    	/*
-                        $('#hdIdPrimary').val(data[0].tm_idinventario);
-                                             
-                        
-                        $('#ddlCenCos').val(data[0].tm_idcencosto);
-                        $('#ddlProducto').val(data[0].tm_idproducto);
-
-                        $('#txtCantidadAnt').val(data[0].tm_cant_ante);
-                        $('#txtCantidadEnvi').val(data[0].tm_cant_envi);
-                        $('#txtCantidadDevu').val(data[0].tm_cant_devu);
-                        $('#txtCantidadInv').val(data[0].tm_cant_inve);
-                        $('#txtCantidadCons').val(data[0].tm_cant_cons);
-                      */
-
                         Materialize.updateTextFields();
                     };
                     
@@ -118,29 +89,9 @@ function GuardarDatos () {
 
         data.append('btnGuardar', 'btnGuardar')
 
-            // {
-            // ListarTipoFamilia_Combo('0');
-
-            // $('#ddlTipoFamilia').focus();
-
-            // precargaExp(selectorModal, false);
-            // }
-
-        ;
-        // data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
-        // data.append('archivo', file);
-
-        /*
-        var input_data = $('#pnlForm :input').serializeArray();
-
-        Array.prototype.forEach.call(input_data, function(fields){
-            data.append(fields.name, fields.value);
-        });
-        */
-
         $.ajax({
             type: "POST",
-            url: 'services/suministro/suministro-post.php',
+            url: 'services/informes/informes-post.php',
             contentType:false,
             processData:false,
             cache: false,
@@ -167,7 +118,7 @@ function GuardarDatos () {
 }
 
 
-function ListarPeriodo_Combo (idperiodo_default) {
+function ListarPeriodo_Combo1 (idperiodo_default) {
     $.ajax({
         type: 'GET',
         url: 'services/periodo/periodo-search.php',
@@ -191,7 +142,39 @@ function ListarPeriodo_Combo (idperiodo_default) {
                 };
             };
 
-            $('#ddlPeriodo').html(strhtml);
+            $('#ddlPeriodo1').html(strhtml);
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
+}
+
+function ListarPeriodo_Combo2 (idperiodo_default) {
+    $.ajax({
+        type: 'GET',
+        url: 'services/periodo/periodo-search.php',
+        cache: false,
+        dataType: 'json',
+        data: {
+            tipobusqueda: '1',
+            idempresa: $('#hdIdEmpresa').val(),
+            idcentro: $('#hdIdCentro').val()
+        },
+        success: function(data){
+            var strhtml = '';
+            var countdata = data.length;
+            var i = 0;
+
+            if (countdata > 0) {
+                while (i < countdata){
+                    var _selected = idperiodo_default == data[i].tm_idperiodo ? ' selected' : '';
+                    strhtml += '<option' + _selected + ' value="' + data[i].tm_idperiodo + '">' + data[i].tm_descripcion + '</option>';
+                    ++i;
+                };
+            };
+
+            $('#ddlPeriodo2').html(strhtml);
         },
         error: function (error) {
             console.log(error);

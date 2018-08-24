@@ -1,6 +1,6 @@
 <?php
 require '../../adata/Db.class.php';
-require '../../bussiness/inventario.php';
+require '../../bussiness/informes.php';
 
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND
 strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
@@ -18,8 +18,8 @@ $row = array(array());
 
 $id = isset($_GET['id']) ? $_GET['id'] : '0';
 
-$objData = new clsInventario();
-$row = $objData->Listar('2',1,1, 0, 0,$id,'', 1);
+$objData = new clsInformes();
+$row = $objData->Listar(7,7);
 
 if (isset($row))
 	echo json_encode($row);

@@ -12,11 +12,11 @@ class clsCentroCosto {
 		return $rs;
 	}
 
-	function Registrar($idCentroCosto, $idempresa, $idcentro, $centrocosto, $nombre, $idusuario, &$rpta, &$titulomsje, &$contenidomsje)
+	function Registrar($idCentroCosto, $idempresa, $idcentro, $centrocosto, $descripcion, $nombre, $idusuario, &$rpta, &$titulomsje, &$contenidomsje)
 	{
 		$bd = $this->objData;
 		$sp_name = 'pa_centrocosto_registrar';
-		$result = $bd->exec_sp_iud($sp_name, array($idCentroCosto, $idempresa, $idcentro, $centrocosto, $nombre, $idusuario), '@rpta, @titulomsje, @contenidomensaje');
+		$result = $bd->exec_sp_iud($sp_name, array($idCentroCosto, $idempresa, $idcentro, $centrocosto, $descripcion, $nombre, $idusuario), '@rpta, @titulomsje, @contenidomensaje');
 		
 		$rpta = $result[0]['@rpta'];
 		$titulomsje = $result[0]['@titulomsje'];

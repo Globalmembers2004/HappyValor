@@ -11,7 +11,7 @@ ini_set('display_errors',1);
     require '../../common/class.translation.php';
     require '../../adata/Db.class.php';
     require '../../common/functions.php';
-    require '../../bussiness/inventario.php';
+    require '../../bussiness/informes.php';
     $sesion = new sesion();
     $idusuario = $sesion->get("idusuario");
     $idperfil = $sesion->get("idperfil");
@@ -24,9 +24,9 @@ $criterio = trim(strip_tags($criterio));
 $criterio = preg_replace('/\s+/', ' ', $criterio);
 $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : '1';
 
-$objData = new clsInventario();
+$objData = new clsInformes();
 
-$row = $objData->Listar(1,1,1,1,1,0, $criterio, $pagina);
+$row = $objData->Listar(7,7);
 
 echo json_encode($row);
 flush();
