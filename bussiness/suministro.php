@@ -39,10 +39,10 @@ class clsSuministro
 		return $result;
 	}
 
-	function ImportarFamilia($codigo,$descripcion)
+	function ImportarFamilia($codigo,$descripcion,$tipo)
 	{
 		$bd = $this->objData;
-		$sql = "INSERT into tmp_familia (tm_codfam_star,tm_descripcion) values ('".$codigo."','".$descripcion."')";
+		$sql = "INSERT into tmp_familia (tm_codfam_star,tm_descripcion,tm_tipo) values ('".$codigo."','".$descripcion."','".$tipo."')";
 		$result = $bd->ejecutar($sql);
 		return $result;
 	}

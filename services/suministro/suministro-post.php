@@ -59,7 +59,7 @@ if ($_POST){
                     foreach ($lines as $line) {
                         $array = str_getcsv($line);
                         if ($array[0] <>''){
-                            $rpta_im[] = $objData->ImportarFamilia($array[0],$array[1]);
+                            $rpta_im[] = $objData->ImportarFamilia($array[0],$array[1],$array[2]);
                         }
                     }
                     $rpta_im[] = $objData->AdicionarFamilia();
