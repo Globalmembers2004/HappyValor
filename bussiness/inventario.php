@@ -15,11 +15,11 @@ class clsInventario
 		return $rs;
 	}
 
-	function Registrar($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
+	function Registrar($idinventario, $idempresa, $idcentro, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
 	{
 		$bd = $this->objData;
 		$sp_name = 'pa_inventario_registrar';
-		$result = $bd->exec_sp_iud($sp_name, array($idinventario, $idempresa, $idcentro, $idperiodo, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario), '@rpta, @titulomsje, @contenidomsje');
+		$result = $bd->exec_sp_iud($sp_name, array($idinventario, $idempresa, $idcentro, $idcencosto, $idcencosto1, $idproducto, $cantant, $cantenv, $cantree, $cantrec, $cantinv, $cantcon, $idusuario), '@rpta, @titulomsje, @contenidomsje');
 		$rpta = $result[0]['@rpta'];
 		$titulomsje = $result[0]['@titulomsje'];
 		$contenidomensaje = $result[0]['@contenidomsje'];
@@ -72,54 +72,6 @@ class clsInventario
 		$rs = $bd->set_select($campos, $tabla, $condicion);
 		return $rs;
     }
-
-	function ListarReenvio($tipo, $idempresa, $idcentro, $idproducto, $idcencosto_ori,  $idcencosto_des, $idinventario, $id, $criterio, $pagina)
-	{
-		$bd = $this->objData;
-		$rs = $bd->exec_sp_select('pa_reenvio_listar', array($tipo, $idempresa, $idcentro, $idproducto, $idcencosto_ori,  $idcencosto_des, $idinventario, $id, $criterio, $pagina));
-		return $rs;
-	}
-
-	function EliminarReenvio($id, $idusuario, &$rpta, &$titulomsje, &$contenidomsje)
-    {
-        $bd = $this->objData;
-        $sp_name = 'pa_reenvio_eliminar';
-        $params = array($id, $idusuario);
-        
-        $result = $bd->exec_sp_iud($sp_name, $params, '@rpta, @titulomsje, @contenidomsje');
-
-        $rpta = $result[0]['@rpta'];
-        $titulomsje = $result[0]['@titulomsje'];
-        $contenidomsje = $result[0]['@contenidomsje'];
-
-        return $rpta;
-    }
-
-	function RegistrarReenvio($idenvio, $idempresa, $idcentro, $idinventario, $idperiodo, $idproducto, $idcencosto_ori, $idcencosto_des, $cantenv, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
-	{
-		$bd = $this->objData;
-		$sp_name = 'pa_reenvio_registrar';
-		$result = $bd->exec_sp_iud($sp_name, array($idenvio, $idempresa, $idcentro, $idinventario, $idperiodo, $idproducto, $idcencosto_ori, $idcencosto_des, $cantenv, $idusuario), '@rpta, @titulomsje, @contenidomsje');
-		$rpta = $result[0]['@rpta'];
-		$titulomsje = $result[0]['@titulomsje'];
-		$contenidomensaje = $result[0]['@contenidomsje'];
-		return $rpta;
-	}
-
-
-    function ModificarReenvio($idenvio, $idempresa, $idcentro, $idinventario, $idperiodo, $idproducto, $idcencosto_ori, $idcencosto_des, $cantenv, $idusuario, &$rpta, &$titulomsje, &$contenidomensaje)
-	{
-		$bd = $this->objData;
-        $sp_name = 'pa_reenvio_eliminar';
-        $params = array($idenvio, $idusuario);
-        $result = $bd->exec_sp_iud($sp_name, $params, '@rpta, @titulomsje, @contenidomsje');
-		$sp_name = 'pa_reenvio_registrar';
-		$result = $bd->exec_sp_iud($sp_name, array($idenvio, $idempresa, $idcentro, $idinventario, $idperiodo, $idproducto, $idcencosto_ori, $idcencosto_des, $cantenv, $idusuario), '@rpta, @titulomsje, @contenidomsje');
-		$rpta = $result[0]['@rpta'];
-		$titulomsje = $result[0]['@titulomsje'];
-		$contenidomensaje = $result[0]['@contenidomsje'];
-		return $rpta;
-	}
 
 }
 ?>

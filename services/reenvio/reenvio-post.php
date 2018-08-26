@@ -26,13 +26,13 @@ if ($_POST){
 
     if (isset($_POST['btnGuardar'])){
 
-        $hdIdProducto = (isset($_POST['idproducto'])) ? $_POST['idproducto'] : '0';
+        $hdIdProducto = (isset($_POST['idProducto'])) ? $_POST['idProducto'] : '0';
         $ddlCenCosOri = (isset($_POST['centroori'])) ? $_POST['centroori'] : '0';
    
         $detalleReenvio = json_decode(stripslashes($_POST['detalleReenvio']));
 
         foreach ($detalleReenvio as $item) {
-            $objData->RegistrarReenvio(0,1,1,$item->idperiodo, $hdIdProducto, $item->centrori, $item->centrodes, $item->cantidad, $idusuario, $rpta, $titulomsje, $contenidomensaje);
+            $objData->RegistrarReenvio(0,1,1,$hdIdProducto, $ddlCenCosOri, $item->centrodes, $item->cantidad, $idusuario, $rpta, $titulomsje, $contenidomensaje);
         }
     }
     elseif (isset($_POST['btnEliminar'])) {

@@ -108,8 +108,9 @@
                             <table id="gvDetalle" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" data-selected="none" data-multiselect="false" data-actionbar="generic-actionbar">
                                  <thead>
                                     <tr>
-                                      <th class="align-center">Centro de Costo</th>
-                                      <th class="align-center">Enviado</th>
+                                      <th class="align-left">Centro de Costo</th>
+                                      <th class="align-right">Enviado</th>
+                                      <th></th>
                                     </tr>
                                   </thead>
                                   <tbody>

@@ -61,7 +61,7 @@ $(function () {
         var idmodel = parent[0].getAttribute('data-idmodel');
         
         if (accion == 'edit')
-            GoToEdit(idmodel);
+            MostrarReenvio(idmodel);
         else if (accion == 'delete'){
             MessageBox({
                 content: '¿Desea eliminar este elemento?',
@@ -83,10 +83,18 @@ $(function () {
 
     $('#gvDatos').on('click', "button", function (event) {
         event.preventDefault();
-        var idItem = this.getAttribute("data-idinventario");
+        var idInventario = this.getAttribute("data-iddetalle");
         var idProducto = this.getAttribute("data-idproducto");
-        GoToEdit(idItem, idProducto);
+        MostrarReenvio(idInventario, idProducto);
     });
+
+    $('#gvDetalle').on('click', "button", function (event) {
+        event.preventDefault();
+        var idInventario = this.getAttribute("data-idinventario");
+        var idProducto = this.getAttribute("data-idproducto");
+        MostrarReenvio(idInventario, idProducto);
+    });
+
 
 
     $('#Agregar').on('click', function (event) {
@@ -121,6 +129,8 @@ $(function () {
 
 });
 
+var sumaReenvio = 0;
+var idReenvio = 0;
 var indexList = 0;
 var elemsSelected;
 var progress = 0;
@@ -133,7 +143,7 @@ var datagrid = new DataList('#gvDatos', {
 
 function LimpiarForm () {
     $('#ddlCenCosDes').val(0).focus();
-    $('#txtCantidadEnv').val(0);
+    $('#txtCantidadEnvi').val(0);
 }
 
 function removeValidFormRegister () {
@@ -152,7 +162,7 @@ function addValidFormRegister () {
     });
 }
 
-function GoToEdit (idItem, idproducto) {
+function MostrarReenvio (idInventario, idproducto) {
     
     var selectorModal = '#pnlForm';
 
@@ -162,13 +172,18 @@ function GoToEdit (idItem, idproducto) {
 
     LimpiarForm();
 
+    sumaReenvio = 0;
+    idReenvio = 0;
+
+    $('#gvDetalle tbody').html('');
+
     removeValidFormRegister();
     addValidFormRegister();
 
     var centroOrigen = document.getElementById("ddlCenCos").value;
 
     document.getElementById("hdIdProducto").value = idproducto;
-    document.getElementById("hdIdInventario").value = idItem;
+    document.getElementById("hdIdInventario").value = idInventario;
 
     openModalCallBack(selectorModal, function () {
 
@@ -177,7 +192,7 @@ function GoToEdit (idItem, idproducto) {
             url: 'services/reenvio/reenvio-getdetails.php',
             cache: false,
             dataType: 'json',
-            data: 'idinventario=' + idItem,
+            data: 'idinventario=' + idInventario,
             success: function (data) {
                 console.log(data);
                 ListarCenCosDes_Combo('0', centroOrigen);                        
@@ -224,14 +239,14 @@ function BuscarDatos (pagina, centrocosto) {
 
             if (countdata > 0){
                 while(i < countdata){
-                    var idinventario = data[i].tm_idinventario;
+                    var idinventario = data[i].td_idinventario;
                     var idproducto = data[i].tm_idproducto;
                     var idcentrocosto = data[i].tm_idcencosto_ori;
                     var idperiodo = data[i].tm_idperiodo;                    
-                    strhtml += '<tr>';
-                    strhtml += '<td class="hidden" data-iddetalle=">'+idinventario +'"</td>';
+                    strhtml += '<tr data-idproducto="' + idproducto+ '">';
+                    strhtml += '<td class="hidden" data-iddetalle="'+idinventario +'"></td>';
                     strhtml += '<td class="align-left">'+data[i].Producto +'</td>';
-                    strhtml += '<td class="align-center">'+data[i].tm_cant_ant +'</td>';
+                    strhtml += '<td class="align-center">'+data[i].tm_cant_ante +'</td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_envi +'</td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_reen +'</td>';
                     strhtml += '<td class="align-center">'+data[i].tm_cant_reci +'</td>';
@@ -268,17 +283,34 @@ function BuscarDatos (pagina, centrocosto) {
 function AdicionarReenvio() {
     var idcentro = $("#ddlCenCosDes").val();
     var centro = $("#ddlCenCosDes option:selected").text();
-    var cantidad = document.getElementById("txtCantidadEnvi").value;
+    var cantidad = Number(document.getElementById("txtCantidadEnvi").value);
+    var gvDatos = document.getElementById("gvDetalle");
+    var countdata = gvDatos.rows.length;
+    var idproducto = document.getElementById("hdIdProducto").value;
 
+    var cantidadEnviada = Number($('#gvDatos').find('tr[data-idproducto="' + idproducto + '"] td')[3].textContent);
+    var cantidadAnterior = Number($('#gvDatos').find('tr[data-idproducto="' + idproducto + '"] td')[2].textContent);
+
+    cantidadEnviada += cantidadAnterior;
+    idReenvio ++;
     var strhtml = "";
 
     strhtml += '<tr data-idcentrodes="'+idcentro+'">';
-    strhtml += '<td>'+centro +'</td>';
-    strhtml += '<td>'+cantidad +'</td>';
+    strhtml += '<td class="hidden" data-idreenvio="'+idcentro +'"></td>';
+    strhtml += '<td class="align-left">'+centro +'</td>';
+    strhtml += '<td class="align-right">'+cantidad +'</td>';
+    strhtml += '<td class="align-center"><button type="button">Eliminar</button></td>';
     strhtml += '</tr>';
-
-    $("#gvDetalle tbody").append(strhtml);
-
+   
+    if (sumaReenvio + cantidad > cantidadEnviada) {
+        alert('ERROR, Se está reenviando más de lo que se puede');
+        return;
+    }
+    else {
+                $("#gvDetalle tbody").append(strhtml);
+                var countdata = gvDatos.rows.length;
+                sumaReenvio+=cantidad;
+    } 
 }
 
 
@@ -489,11 +521,8 @@ function ListarCenCosDes_Combo (idcencos_default, idcencos_origen) {
 }
 
 
-function DetalleReenvio (idperiodo, centroori, centrodes, idproducto, cantidad) {
-    this.idperiodo = idperiodo;
-    this.centroori = centroori;
+function DetalleReenvio (centrodes, cantidad) {
     this.centrodes = centrodes;
-    this.idproducto = idproducto;
     this.cantidad = cantidad;
 }
 
@@ -507,15 +536,13 @@ function RegistrarReenvio () {
     var countdata = gvDatos.rows.length;
     var listDetalle = [];
     var detalleReenvio = '';
-    var idperiodo = document.getElementById("ddlCenCos").value;
     var centroori = document.getElementById("ddlCenCos").value;
     var idproducto = document.getElementById("hdIdProducto").value;    
-    var idinventario = document.getElementById("hdIdInventario").value;    
     if (countdata > 0){
         while (i < countdata){
             var centrodes = gvDatos.rows[i].getAttribute('data-idcentrodes');
-            var cantidad = gvDatos.rows[i].cells[1].innerText;
-            var detalle = new DetalleReenvio(idperiodo, centroori, centrodes, idproducto, cantidad);
+            var cantidad = gvDatos.rows[i].cells[2].innerText;
+            var detalle = new DetalleReenvio(centrodes, cantidad);
             listDetalle.push(detalle);
             ++i;
         };
@@ -523,9 +550,9 @@ function RegistrarReenvio () {
         detalleReenvio = JSON.stringify(listDetalle);
     };
 
-    data.append('centroori', centroori);
-    data.append('idinventario', idinventario);    
     data.append('idProducto', idproducto);    
+    data.append('centroori', centroori);        
+    data.append('btnGuardar', 'btnGuardar');
     data.append('detalleReenvio', detalleReenvio);
 
     $.ajax({
@@ -538,9 +565,6 @@ function RegistrarReenvio () {
         processData: false,
         success: function (data) {
             precargaExp('#pnlForm > .gp-body', false);
-
-            MessageBox(data.titulomsje, data.contenidomsje, "[Aceptar]", function () {
-            });
         },
         error: function (data) {
             console.log(data);
@@ -549,10 +573,8 @@ function RegistrarReenvio () {
 }
 
 
-function DetalleInventario (iditem, idperiodo, idcentrocosto, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons,valocons) {
+function DetalleInventario (iditem, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons,valocons) {
     this.iditem = iditem;
-    this.idperiodo = idperiodo;
-    this.idcentrocosto = idcentrocosto;
     this.idproducto = idproducto;
     this.cantante = cantante;
     this.cantenvi = cantenvi;
@@ -560,7 +582,6 @@ function DetalleInventario (iditem, idperiodo, idcentrocosto, idproducto, cantan
     this.cantreen = cantreen;
     this.cantinve = cantinve;
     this.cantcons = cantcons;
-    this.valocons = valocons;
 }
 
 function RegistrarInventario () {
@@ -574,22 +595,19 @@ function RegistrarInventario () {
     var countdata = gvDatos.rows.length;
     var listDetalle = [];
     var detalleInventario = '';
-
+    var idcentrocosto = document.getElementById("ddlCenCos").value;    
     if (countdata > 0){
         while (i < countdata){
             var iditem = gvDatos.rows[i].getAttribute('data-iddetalle');
             var idproducto = gvDatos.rows[i].getAttribute('data-idproducto');
-            var idcentrocosto = gvDatos.rows[i].getAttribute('data-idcentrocosto');
-            var idperiodo = gvDatos.rows[i].getAttribute('data-idperiodo');
-            var cantante = gvDatos.rows[i].cells[1].innerText;
-            var cantenvi = gvDatos.rows[i].cells[2].innerText;
-            var cantreci = gvDatos.rows[i].cells[3].innerText;
+            var cantante = gvDatos.rows[i].cells[2].innerText;
+            var cantenvi = gvDatos.rows[i].cells[3].innerText;
             var cantreen = gvDatos.rows[i].cells[4].innerText;
-            var cantinve = gvDatos.rows[i].cells[5].childNodes[0].value;
-            var cantcons = gvDatos.rows[i].cells[6].innerText;
-            var valocons = gvDatos.rows[i].cells[7].innerText;
+            var cantreci = gvDatos.rows[i].cells[5].innerText;
+            var cantinve = gvDatos.rows[i].cells[6].childNodes[0].value;
+            var cantcons = gvDatos.rows[i].cells[7].innerText;
 
-            var detalle = new DetalleInventario(iditem, idperiodo,idcentrocosto, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons, valocons);
+            var detalle = new DetalleInventario(iditem, idproducto, cantante, cantenvi, cantreen, cantreci, cantinve, cantcons);
             listDetalle.push(detalle);
 
             ++i;
@@ -597,9 +615,9 @@ function RegistrarInventario () {
 
         detalleInventario = JSON.stringify(listDetalle);
     };
-
-    data.append('periodo', $('#periodo').val());
-    data.append('centroCosto', $('#centroCosto').val());
+    data.append('centroCosto', idcentrocosto);
+    data.append('btnGuardar', 'btnGuardar');
+    data.append('DetalleConsumo', detalleInventario);
 
     $.ajax({
         url: 'services/inventario/inventario-post.php',
@@ -612,11 +630,6 @@ function RegistrarInventario () {
         success: function (data) {
             precargaExp('#pnlListado > .gp-body', false);
 
-            MessageBox(data.titulomsje, data.contenidomsje, "[Aceptar]", function () {
-                if (data.rpta != '0'){
-                    ListarInventario('consulta');
-                };
-            });
         },
         error: function (data) {
             console.log(data);
