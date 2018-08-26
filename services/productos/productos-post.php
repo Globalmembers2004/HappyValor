@@ -22,7 +22,7 @@ if ($_POST){
     $titulomsje = '';
     $contenidomsje = '';
 
-    $objData = new clsProductos();
+    $objData = new clsProducto();
 
     if (isset($_POST['btnGuardar'])){
         $hdIdPrimary = (isset($_POST['hdIdPrimary'])) ? $_POST['hdIdPrimary'] : '0';
