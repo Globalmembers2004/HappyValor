@@ -4,9 +4,9 @@
     <input type="hidden" id="hdIdCentro" name="hdIdCentro" value="<?php echo $IdCentro; ?>" />
     <div class="page-region">
         <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header mdl-layout__header indigo darken-4 --waterfall">
+            <header class="mdl-layout__header mdl-layout__header light-green --waterfall">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Inventario</span>
+                    <span class="mdl-layout-title">Editar Ventas mensuales</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnSearch" data-type="search">
                         <i class="material-icons">&#xE8B6;</i>
@@ -39,14 +39,10 @@
                             <table>                        
                              <thead>
                                 <tr>
-                                  <th width="30%" class="align-left">Producto</th>
-                                  <th width="10%" class="align-center">Saldo anterior</th>
-                                  <th width="10%" class="align-center">Cantidad enviada</th>
-                                  <th width="10%" class="align-center">Cantidad reenviada</th>
-                                  <th width="10%" class="align-center">Cantidad recibida</th>
-                                  <th width="10%" class="align-center">Inventario</th>
-                                  <th width="10%" class="align-center">Consumo</th>
-                                  <th width="10%"></th>
+                                  <th width="40%" class="align-left">Producto</th>
+                                  <th width="20%" class="align-center">Saldo anterior</th>
+                                  <th width="20%" class="align-center">Inventario</th>
+                                  <th width="20%" class="align-center">ventas</th>
                                 </tr>
                               </thead>
                             </table>
@@ -62,7 +58,7 @@
                     </div>
                 </div>
             </main>
-            <a data-toggle="tooltip" title="Guardar Inventario" id="btnGuardarInv" class="mdl-button mdl-js-button mdl-button--fab animate mdl-js-ripple-effect mdl-button--colored" style="bottom: 45px; right: 24px; position: absolute; z-index: 900;">
+            <a data-toggle="tooltip" title="Guardar Cambios Ventas" id="btnGuardarInv" class="mdl-button mdl-js-button mdl-button--fab animate mdl-js-ripple-effect mdl-button--colored" style="bottom: 45px; right: 24px; position: absolute; z-index: 900;">
                 <i class="material-icons">&#xE5CA;</i>
             </a>
         </div>
@@ -71,7 +67,7 @@
         <input type="hidden" id="hdIdInventario" name="hdIdInventario" value="0" />
         <input type="hidden" id="hdIdProducto" name="hdIdProducto" value="0" />
         <div class="modal-example-header no-padding mdl-layout--fixed-header">
-            <header class="mdl-layout__header indigo darken-4">
+            <header class="mdl-layout__header light-green">
                 <div class="mdl-layout__header-row">
                     <span class="mdl-layout-title">Reenviar a otro centro de costo</span>
                     <div class="mdl-layout-spacer"></div>

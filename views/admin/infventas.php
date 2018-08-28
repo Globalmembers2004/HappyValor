@@ -4,9 +4,9 @@
     <input type="hidden" id="hdIdCentro" name="hdIdCentro" value="<?php echo $IdCentro; ?>" />
     <div class="page-region">
         <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header mdl-layout__header light-blue --waterfall">
+            <header class="mdl-layout__header mdl-layout__header light-green --waterfall">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Crear Archivo de Consumo de Suministros</span>
+                    <span class="mdl-layout-title">Creación de archivo CSV de ventas</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnSearch" data-type="search">
                         <i class="material-icons">&#xE8B6;</i>
@@ -47,9 +47,9 @@
         <input type="hidden" id="hdIdPrimary" name="hdIdPrimary" value="0" />
         <input type="hidden" id="hdFoto" name="hdFoto" value="no-set" />
         <div class="modal-example-header no-padding mdl-layout--fixed-header">
-            <header class="mdl-layout__header light-blue">
+            <header class="mdl-layout__header light-green">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Seleccione periodo</span>
+                    <span class="mdl-layout-title">Seleccione periodo involucrados</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon tooltipped" data-placement="left" data-toggle="tooltip" title="Guardar cambios" id="btnGuardar">
                         <i class="material-icons">&#xE5CA;</i>
@@ -68,17 +68,15 @@
                     <div class="cell colspan6 all-height body-on-phone no-footer mdl-shadow--4dp">
                         <div class="scrollbarra padding20">
                             <div class="col-sm-12 cmb_periodo">
-                                <label class="active" for="ddlPeriodo1"><?php $translate->__('Periodo'); ?></label>
-                                <select id="ddlPeriodo1" name="ddlPeriodo1" style="width: 100%;" class="browser-default">
+                                <label class="active" for="ddlPeriodo"><?php $translate->__('Periodo'); ?></label>
+                                <select id="ddlPeriodo" name="ddlPeriodo" style="width: 100%;" class="browser-default">
                                     <option value="0">Seleccione</option>
                                 </select>
                             </div>
-                            <div class="col-sm-12 cmb_periodo">
-                                <label class="active" for="ddlPeriodo2"><?php $translate->__('Periodo'); ?></label>
-                                <select id="ddlPeriodo2" name="ddlPeriodo2" style="width: 100%;" class="browser-default">
-                                    <option value="0">Seleccione</option>
-                                </select>
-                            </div>
+                            <div class="input-field col-sm-12">
+                                <input class="validate" id="txtDescripcion" name="txtDescripcion" type="botton" placeholder="Ingrese Descripcion" />
+                                <label for="txtDescripcion"><?php $translate->__('Descripcion'); ?></label>
+                            </div> 
                         </div>
                     </div>
                 </div>

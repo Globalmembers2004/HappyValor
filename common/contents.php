@@ -32,11 +32,11 @@ $p_enlaces = "enlaces-$op.php";
 $p_productos = "productos-$op.php";
 $p_migtab = "imp-suministro-$op.php";
 $p_migtabmen = "imp-mensual-$op.php";
-$p_libroventas = "libroventas-$op.php";
+$p_infventas = "infventas-$op.php";
 $p_cliente = "cliente-$op.php";
 $p_ventas = "imp-ventas-$op.php";
 $p_rutinasocio = "rutinasocio-$op.php";
-$p_seguimiento = "seguimiento-$op.php";
+$p_editventas = "editventas-$op.php";
 $p_claseseparada = "claseseparada-$op.php";
 $p_dietagym = "dieta-$op.php";
 $p_categories = "categories-$op.php";
@@ -183,9 +183,9 @@ elseif ($pag == "admin") {
         $subcontent = $p_productos;
         $scripts = '<script src="plugins/datetimepicker/moment-with-locales.min.js"></script><script src="scripts/jquery/jquery.ui.datepicker-es.js"></script><script src="scripts/scale-image.min.js"></script><script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/productos-script.js"></script>';
     }
-    elseif ($subpag == "libroventas"){
-        $subcontent = $p_libroventas;
-        $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/libroventas-script.js"></script>';
+    elseif ($subpag == "infventas"){
+        $subcontent = $p_infventas;
+        $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/infventas-script.js"></script>';
     }
 
     elseif ($subpag == "enlaces"){
@@ -197,9 +197,9 @@ elseif ($pag == "admin") {
         $scripts = '<script type="text/javascript" src="plugins/canvas/canvasjs.min.js"></script><script src="scripts/app/admin/informes-script.js"></script>';
     }
 
-    elseif ($subpag == "seguimiento"){
-        $subcontent = $p_seguimiento;
-        $scripts = '<script src="scripts/app/admin/seguimiento-script.js"></script>';
+    elseif ($subpag == "editventas"){
+        $subcontent = $p_editventas;
+        $scripts = '<script src="scripts/app/admin/editventas-script.js"></script>';
     }
     elseif ($subpag == "instructorgrupal"){
         $subcontent = $p_instructorgrupal;

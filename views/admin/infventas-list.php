@@ -6,7 +6,7 @@
         <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header mdl-layout__header light-blue --waterfall">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Crear Archivo de Consumo de Suministros</span>
+                    <span class="mdl-layout-title">Crear Archivo de Ventas</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btnSearch" data-type="search">
                         <i class="material-icons">&#xE8B6;</i>
@@ -49,7 +49,7 @@
         <div class="modal-example-header no-padding mdl-layout--fixed-header">
             <header class="mdl-layout__header light-blue">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Seleccione periodo</span>
+                    <span class="mdl-layout-title">Seleccione Periodo</span>
                     <div class="mdl-layout-spacer"></div>
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon tooltipped" data-placement="left" data-toggle="tooltip" title="Guardar cambios" id="btnGuardar">
                         <i class="material-icons">&#xE5CA;</i>

@@ -249,14 +249,10 @@ function BuscarDatos (pagina, centrocosto) {
                     var idperiodo = data[i].tm_idperiodo;                    
                     strhtml += '<tr data-idproducto="' + idproducto+ '">';
                     strhtml += '<td class="hidden" data-iddetalle="'+idinventario +'"></td>';
-                    strhtml += '<td width="30%" class="align-left">'+data[i].Producto +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_ante +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_envi +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_reen +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_reci +'</td>';
-                    strhtml += '<td width="10%" class="align-center"><input class="validate" id="txtInventario'+i+'" class="inputTextInTable align-right" value="'+data[i].tm_cant_inve +'" type="text"/></td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_cons +'</td>';
-                    strhtml += '<td width="10%" class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
+                    strhtml += '<td width="40%" class="align-left">'+data[i].Producto +'</td>';
+                    strhtml += '<td width="20%" class="align-center">'+data[i].tm_cant_ante +'</td>';
+                    strhtml += '<td width="20%" class="align-center">'+data[i].tm_cant_inve +'</td>';
+                    strhtml += '<td width="20%" class="align-center">'+data[i].tm_cant_cons +'</td>';
                     strhtml += '</tr>';
                     ++i;
                 };
