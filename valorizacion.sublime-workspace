@@ -520,132 +520,27 @@
 	"buffers":
 	[
 		{
-			"file": "views/admin/inventario-list.php",
-			"settings":
-			{
-				"buffer_size": 7731,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/inventario/inventario-post.php",
-			"settings":
-			{
-				"buffer_size": 1724,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/productos/productos-post.php",
-			"settings":
-			{
-				"buffer_size": 1631,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "bussiness/productos.php",
-			"settings":
-			{
-				"buffer_size": 2277,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "/D/valorizacion.sql",
 			"settings":
 			{
-				"buffer_size": 3307001,
+				"buffer_size": 3732955,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scripts/app/admin/inventario-script.js",
+			"file": "/C/xampp/htdocs/globalmembers/.htaccess",
 			"settings":
 			{
-				"buffer_size": 20043,
-				"encoding": "UTF-8",
+				"buffer_size": 105,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "views/admin/informes.php",
+			"file": "/D/inventario_adicionar.sql",
 			"settings":
 			{
-				"buffer_size": 5298,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/informes/informes-post.php",
-			"settings":
-			{
-				"buffer_size": 1501,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/valorizacion/MIGRACION/PRODUCTOS.csv",
-			"settings":
-			{
-				"buffer_size": 493224,
-				"encoding": "Western (Windows 1252)",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "bussiness/reenvio.php",
-			"settings":
-			{
-				"buffer_size": 2283,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/inventario/inventario-search.php",
-			"settings":
-			{
-				"buffer_size": 1327,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/reenvio/reenvio-getdetails.php",
-			"settings":
-			{
-				"buffer_size": 868,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/reenvio/reenvio-search.php",
-			"settings":
-			{
-				"buffer_size": 1336,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/reenvio/reenvio-post.php",
-			"settings":
-			{
-				"buffer_size": 1594,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "bussiness/inventario.php",
-			"settings":
-			{
-				"buffer_size": 2577,
-				"encoding": "UTF-8",
+				"buffer_size": 2721,
 				"line_ending": "Windows"
 			}
 		}
@@ -751,24 +646,62 @@
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-search.php",
-		"/C/xampp/htdocs/valorizacion/bussiness/suministro.php",
+		"/C/xampp/htdocs/valorizacion/common/contents.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/infventas-list.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/infventas-script.js",
+		"/C/xampp/htdocs/valorizacion/bussiness/infventas.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/informes-list.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/productos-list.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/inventario-list.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/infventas.php",
+		"/C/xampp/htdocs/valorizacion/services/informes/informes-getdetails.php",
+		"/C/xampp/htdocs/valorizacion/services/informes/informes-post.php",
 		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-post.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/informes.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/editventas.php",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/editventas-script.js",
+		"/C/xampp/htdocs/valorizacion/views/admin/editventas-list.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/ventas.php",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-getdetails.php",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-post.php",
+		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-search.php",
+		"/C/xampp/htdocs/fiochieventosyshows.com/index.html",
+		"/C/xampp/htdocs/capullitosdeamor.com/index.html",
+		"/C/xampp/htdocs/valorizacion/scripts/app/admin/inventario-script.js",
+		"/C/xampp/htdocs/valorizacion/views/settings/accesosdirectos.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/imp-ventas-list.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/informes.php",
+		"/C/xampp/htdocs/valorizacion/views/admin/imp-suministro.php",
+		"/D/inventario_adicionar.sql",
+		"/D/valorizacion.sql",
+		"/C/xampp/htdocs/happyland/export.php",
+		"/C/xampp/htdocs/happyland/functions/conexion.php",
+		"/C/xampp/htdocs/valorizacion/adata/Db.class.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/inventario.php",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-post.php",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-search.php",
+		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-getdetails.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/reenvio.php",
+		"/C/xampp/htdocs/valorizacion/ParaLibro.html",
+		"/C/xampp/htdocs/valorizacion/LibroGeneral.html",
+		"/C/xampp/htdocs/valorizacion/views/admin/imforme.php",
+		"/D/valorizacion/MIGRACION/PRODUCTOS.csv",
+		"/C/xampp/htdocs/capullitos/index.html",
+		"/C/xampp/htdocs/fiochi/index.html",
+		"/C/xampp/htdocs/globalmembers/index.html",
+		"/C/xampp/htdocs/globalmembers/index.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/productos.php",
+		"/C/xampp/htdocs/valorizacion/services/productos/productos-post.php",
+		"/C/xampp/htdocs/valorizacion/bussiness/suministro.php",
 		"/C/xampp/htdocs/valorizacion/scripts/app/admin/imp-suministro-script.js",
 		"/D/producto.sql",
 		"/C/Users/User/valorizacion/BaseDatos/valorizacion.sql",
-		"/C/xampp/htdocs/globalmembers/index.php",
 		"/D/familia_temp",
 		"/C/xampp/htdocs/valorizacion/scripts/app/settings/familia-script.js",
-		"/D/valorizacion/MIGRACION/PRODUCTOS.csv",
 		"/D/valorizacion/MIGRACION/FAMILIA.csv",
 		"/D/valorizacion/FAMILIA.csv",
-		"/D/valorizacion.sql",
 		"/C/xampp/htdocs/valorizacion - copia/scripts/app/admin/inventario-script.js",
-		"/C/xampp/htdocs/valorizacion/views/admin/imp-ventas-list.php",
-		"/C/xampp/htdocs/valorizacion/bussiness/inventario.php",
 		"/C/xampp/htdocs/valorizacion/Inventario.php",
-		"/C/xampp/htdocs/valorizacion/common/contents.php",
 		"/D/valorizacion/tablas_adicionales.sql",
 		"/C/xampp/htdocs/valorizacion/scripts/app/admin/imp-ventas-script.js",
 		"/C/xampp/htdocs/valorizacion/services/suministro/suministro-search.php",
@@ -777,7 +710,6 @@
 		"/C/xampp/htdocs/valorizacion/services/enlace/enlace-post.php",
 		"/C/xampp/htdocs/valorizacion/bussiness/enlace.php",
 		"/C/xampp/htdocs/valorizacion/views/settings/enlace.php",
-		"/C/xampp/htdocs/valorizacion/views/settings/accesosdirectos.php",
 		"/C/xampp/htdocs/valorizacion/services/enlace/enlace-search.php",
 		"/C/xampp/htdocs/valorizacion/scripts/app/settings/enlace-script.js",
 		"/C/xampp/htdocs/valorizacion/views/admin/enlaces-list.php",
@@ -788,25 +720,12 @@
 		"/C/xampp/htdocs/valorizacion/views/settings/centrocosto.php",
 		"/C/xampp/htdocs/valorizacion/bussiness/centrocosto.php",
 		"/D/inventario_inicial.sql",
-		"/C/xampp/htdocs/valorizacion/views/admin/informes-list.php",
-		"/C/xampp/htdocs/valorizacion/bussiness/informes.php",
-		"/C/xampp/htdocs/valorizacion/services/informes/informes-getdetails.php",
-		"/C/xampp/htdocs/valorizacion/services/informes/informes-post.php",
 		"/C/xampp/htdocs/valorizacion/scripts/app/admin/informes-script.js",
-		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-getdetails.php",
-		"/C/xampp/htdocs/valorizacion/services/inventario/inventario-post.php",
-		"/C/xampp/htdocs/valorizacion/views/admin/inventario-list.php",
-		"/C/xampp/htdocs/valorizacion/scripts/app/admin/inventario-script.js",
-		"/C/xampp/htdocs/valorizacion/bussiness/reenvio.php",
-		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-getdetails.php",
-		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-post.php",
-		"/C/xampp/htdocs/valorizacion/services/reenvio/reenvio-search.php",
 		"/C/xampp/htdocs/valorizacion/services/informes/informes-search.php",
 		"/C/xampp/htdocs/valorizacion/common/functions.php",
 		"/D/usuarios.sql",
 		"/C/xampp/htdocs/valorizacion/functions/inventario.php",
 		"/C/xampp/htdocs/valorizacion/bussiness/areas.php",
-		"/C/xampp/htdocs/valorizacion/views/admin/imforme.php",
 		"/D/BDValorizacion.sql",
 		"/C/xampp/htdocs/valorizacion/scripts/app/settings/periodo-script.js",
 		"/C/xampp/htdocs/cinadsacenter/views/process/facturacion.php",
@@ -827,7 +746,6 @@
 		"/C/Users/User/Downloads/BANCO_2.docx",
 		"/D/valorizacion/ENLACE.csv",
 		"/D/valorizacion/CUENTACONTABLE.csv",
-		"/C/xampp/htdocs/valorizacion/views/admin/imp-suministro.php",
 		"/C/xampp/htdocs/valorizacion/services/ctactb/ctactb-search.php",
 		"/C/xampp/htdocs/valorizacion/bussiness/ctactb.php",
 		"/C/xampp/htdocs/valorizacion/views/security/users-list.php",
@@ -855,30 +773,7 @@
 		"/C/xampp/htdocs/valorizacion/scripts/app/security/perfil-script.js",
 		"/C/xampp/htdocs/valorizacion/views/security/access-form.php",
 		"/C/xampp/htdocs/valorizacion/views/settings/tipofamilia.php",
-		"/C/xampp/htdocs/valorizacion/views/settings/periodo.php",
-		"/C/xampp/htdocs/amafit/app/common/header.php",
-		"/C/xampp/htdocs/amafit/app/scripts/app/common/contents.js",
-		"/C/xampp/htdocs/amafit/app/scripts/app/common/home.js",
-		"/C/xampp/htdocs/amafit/app/scripts/app/common/contents-jquery.js",
-		"/D/valorizacion/productos.csv",
-		"/C/xampp/htdocs/noafp/index.html",
-		"/C/xampp/htdocs/noafp/css/bootstrap.css",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-30 Y 31.csv",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-24 AL 29.csv",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-17 AL 23.csv",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-13 AL 16.csv",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-09 AL 12.csv",
-		"/C/xampp/htdocs/happyland/tmp_excel/2018-08-07-01 AL 08.csv",
-		"/C/xampp/htdocs/happyland/createExcel.php",
-		"/C/xampp/htdocs/happyland/procesarLibro.php",
-		"/C/xampp/htdocs/happyland/ParaLibro.html",
-		"/C/xampp/htdocs/happyland/procesar.php",
-		"/C/xampp/htdocs/happyland/Consolidado.php",
-		"/D/libro.sql",
-		"/C/xampp/htdocs/cinadsacenter/dist/js/app/admin/concepto-script.js",
-		"/C/xampp/htdocs/cinadsacenter/dist/js/app/process/presupuesto-script.js",
-		"/C/xampp/htdocs/amafit/app/views/admin/rutinagym-list.php",
-		"/C/xampp/htdocs/amafit/app/views/settings/rutinagym.php"
+		"/C/xampp/htdocs/valorizacion/views/settings/periodo.php"
 	],
 	"find":
 	{
@@ -897,6 +792,30 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"DEFINER=`root`@`localhost` ",
+			"p_libroventas",
+			"seguimiento",
+			"rutinasocio",
+			"alt",
+			"h1",
+			"meta",
+			"tm_periodo",
+			"tm_idperiodo",
+			"envi",
+			"inventario",
+			"Productos",
+			"EliminarItemProductos",
+			"AdicionarReenvio",
+			"data-idproducto",
+			"data-iddetalle",
+			"data-idinventario",
+			"data-idproducto",
+			"data-iddetalle",
+			"data-idproducto",
+			"innerText;",
+			"data-iddetalle",
+			"data-idproducto",
+			"data-idinventario",
 			"BOLSA P/CANJE POLIETILENO BAJA DENSIDAD 25 L X32 A X1.5 ESPESOR",
 			"CARTERITA NEGRA",
 			"CARTERITA NEGRA C/ BOLAS BL",
@@ -1000,31 +919,7 @@
 			"tmp_",
 			"TipoFamilia",
 			"GoToEdit",
-			"tipofamilia",
-			"TipoFamilia",
-			"php",
-			"GetDataById",
-			"MostrarDatos",
-			"ListarZonacorporal_Combo",
-			"Opcion",
-			"opciones",
-			"ejecutar",
-			"DEFINER=`root`@`localhost`",
-			"inventario",
-			"CTotales",
-			"startsoft",
-			"starsoft",
-			"foto",
-			"Foto",
-			"foto",
-			"hdIdPrimary",
-			"hdIdInventario",
-			"hdIdPrimary",
-			"hdId",
-			"hdIdInventario",
-			"data-idcentrodes",
-			"idPro",
-			"idpro"
+			"tipofamilia"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1133,260 +1028,53 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/admin/inventario-list.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7731,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6389,
-								6390
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1497.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "services/inventario/inventario-post.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1724,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								524,
-								524
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "services/productos/productos-post.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								738,
-								738
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "bussiness/productos.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "/D/valorizacion.sql",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3307001,
+						"buffer_size": 3732955,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								178,
-								178
+								3732955,
+								3732955
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "scripts/app/admin/inventario-script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18934,
-								18934
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11111.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/admin/informes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5298,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2407,
-								2408
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 722.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "services/informes/informes-post.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 799942.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/D/valorizacion/MIGRACION/PRODUCTOS.csv",
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/globalmembers/.htaccess",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 493224,
+						"buffer_size": 105,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64195,
-								64209
+								105,
+								105
 							]
 						],
 						"settings":
@@ -1394,184 +1082,39 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 18074.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "bussiness/reenvio.php",
+					"buffer": 2,
+					"file": "/D/inventario_adicionar.sql",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2283,
+						"buffer_size": 2721,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								903,
-								903
+								2570,
+								2721
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9.0,
+						"translation.y": 498.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "services/inventario/inventario-search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "services/reenvio/reenvio-getdetails.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 868,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								388,
-								388
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "services/reenvio/reenvio-search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "services/reenvio/reenvio-post.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1172,
-								1172
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "bussiness/inventario.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1631,15 +1174,55 @@
 		[
 			[
 				"prod",
-				"bussiness\\productos.php"
-			],
-			[
-				"informes",
-				"services\\informes\\informes-post.php"
+				"views\\admin\\productos-list.php"
 			],
 			[
 				"inventar",
-				"bussiness\\inventario.php"
+				"views\\admin\\inventario-list.php"
+			],
+			[
+				"informe",
+				"views\\admin\\informes-list.php"
+			],
+			[
+				"informes",
+				"views\\admin\\informes-list.php"
+			],
+			[
+				"suminio",
+				"services\\suministro\\suministro-post.php"
+			],
+			[
+				"inven",
+				"services\\inventario\\inventario-search.php"
+			],
+			[
+				"invent",
+				"services\\inventario\\inventario-post.php"
+			],
+			[
+				"inventario",
+				"scripts\\app\\admin\\inventario-script.js"
+			],
+			[
+				"ventas",
+				"bussiness\\ventas.php"
+			],
+			[
+				"conten",
+				"common\\contents.php"
+			],
+			[
+				"db.",
+				"adata\\Db.class.php"
+			],
+			[
+				"imp",
+				"views\\admin\\imp-suministro.php"
+			],
+			[
+				"acce",
+				"views\\settings\\accesosdirectos.php"
 			],
 			[
 				"familia",
@@ -1664,18 +1247,6 @@
 			[
 				"reen",
 				"services\\reenvio\\reenvio-search.php"
-			],
-			[
-				"inventario",
-				"scripts\\app\\admin\\inventario-script.js"
-			],
-			[
-				"invent",
-				"bussiness\\inventario.php"
-			],
-			[
-				"conten",
-				"common\\contents.php"
 			],
 			[
 				"suministr",
@@ -1738,19 +1309,7 @@
 				"services\\suministro\\suministro-post.php"
 			],
 			[
-				"imp",
-				"views\\admin\\imp-suministro-list.php"
-			],
-			[
-				"informe",
-				"views\\admin\\imforme.php"
-			],
-			[
 				"inventa",
-				"scripts\\app\\admin\\inventario-script.js"
-			],
-			[
-				"inven",
 				"scripts\\app\\admin\\inventario-script.js"
 			],
 			[
@@ -2124,22 +1683,6 @@
 			[
 				"consoli",
 				"Consolidado.php"
-			],
-			[
-				"libro",
-				"scripts\\app\\admin\\libroventas-script.js"
-			],
-			[
-				"cam",
-				"scripts\\app\\admin\\cambio-script.js"
-			],
-			[
-				"cliente-scr",
-				"scripts\\app\\admin\\cliente-script.js"
-			],
-			[
-				"enlace-sr",
-				"scripts\\app\\admin\\enlaces-script.js"
 			]
 		],
 		"width": 0.0

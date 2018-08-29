@@ -53,10 +53,8 @@ $(function () {
     });
 
     $('#gvDatos').on('click touchend', '.dropdown a', function(event) {
-        event.preventDefault();
-
-        var accion = this.getAttribute('data-action');
-        // var parent = this.parentNode.parentNode.parentNode.parentNode;
+         var accion = this.getAttribute('data-action');
+        // var parent = this.arentNode.parentNode.parentNode.parentNode;
         var parent = getParentsUntil(this, '#gvDatos', '.dato');
         var idmodel = parent[0].getAttribute('data-idmodel');
         
@@ -130,6 +128,35 @@ $(function () {
                 error.insertAfter(element);
         }
     });
+
+    $('#gvDatos tbody').on({
+        click: function(event) {
+            event.preventDefault();
+            if ($(this).hasClass('cantInve')) {
+                $(this).select();
+                return false;
+            };
+        },
+        keyup: function (event) {
+            if ($(this).hasClass('cantInve')) {
+                var cantinv = 0;
+                var cantant = 0;
+                var cantenv = 0;
+                var cantree = 0;
+                var cantrec = 0;
+
+                cantinv = Number($(this).val());
+                cantant = Number($(this).parent().parent().find('.cantAnte').val());
+                cantenv = Number($(this).parent().parent().find('.cantEnvi').val());
+                cantree = Number($(this).parent().parent().find('.cantReen').val());
+                cantrec = Number($(this).parent().parent().find('.cantReci').val());
+
+                var consumo = cantant + cantenv + cantrec - cantree - cantinv ;
+
+                $(this).parent().parent().find('.cantCons').text(consumo.toFixed(3));
+            };
+        }
+    }, 'input:text');
 
 });
 
@@ -249,14 +276,14 @@ function BuscarDatos (pagina, centrocosto) {
                     var idperiodo = data[i].tm_idperiodo;                    
                     strhtml += '<tr data-idproducto="' + idproducto+ '">';
                     strhtml += '<td class="hidden" data-iddetalle="'+idinventario +'"></td>';
-                    strhtml += '<td width="30%" class="align-left">'+data[i].Producto +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_ante +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_envi +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_reen +'</td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_reci +'</td>';
-                    strhtml += '<td width="10%" class="align-center"><input class="validate" id="txtInventario'+i+'" class="inputTextInTable align-right" value="'+data[i].tm_cant_inve +'" type="text"/></td>';
-                    strhtml += '<td width="10%" class="align-center">'+data[i].tm_cant_cons +'</td>';
-                    strhtml += '<td width="10%" class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
+                    strhtml += '<td width="30%" class="align-left">'+data[i].Producto.substr(0,90) +'</td>';
+                    strhtml += '<td width="10%" class="cantAnte text-right">'+data[i].tm_cant_ante +'</td>';
+                    strhtml += '<td width="10%" class="cantEnvi text-right">'+data[i].tm_cant_envi +'</td>';
+                    strhtml += '<td width="10%" class="cantReen text-right">'+data[i].tm_cant_reen +'</td>';
+                    strhtml += '<td width="10%" class="cantReci text-right">'+data[i].tm_cant_reci +'</td>';
+                    strhtml += '<td><input type="text" class="cantInve inputTextInTable text-right" width="10%" value="'+Number(data[i].tm_cant_inve).toFixed(2) +'" /></td>';
+                    strhtml += '<td width="10%" class="cantCons text-right">'+data[i].tm_cant_cons +'</td>';
+                    strhtml += '<td class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
                     strhtml += '</tr>';
                     ++i;
                 };
