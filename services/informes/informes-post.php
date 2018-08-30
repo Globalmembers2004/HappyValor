@@ -11,8 +11,10 @@ if ($_POST){
     require '../../common/sesion.class.php';
     require '../../common/class.translation.php';
     require '../../adata/Db.class.php';
-    // require '../../common/functions.php';
     require '../../bussiness/informes.php';
+    require('../../common/PHPExcel.php');
+    require('../../common/PHPExcel/Writer/Excel2007.php');
+
 
     $sesion = new sesion();
     $idusuario = $sesion->get("idusuario");
@@ -24,22 +26,54 @@ if ($_POST){
 
     $objData = new clsInformes();
 
+    $objPHPExcel = new PHPExcel();
+
+    $objPHPExcel->setActiveSheetIndex(0);
+
+    $nameFileExport = '../../tmp_excel/InformeSuministro.xlsx';
+
+
     if (isset($_POST['btnGuardar'])){
         $hdIdPrimary = (isset($_POST['hdIdPrimary'])) ? $_POST['hdIdPrimary'] : '0';
         $ddlPeriodo1 = (isset($_POST['ddlPeriodo1'])) ? $_POST['ddlPeriodo1'] : 0;
         $ddlPeriodo2 = (isset($_POST['ddlPeriodo2'])) ? $_POST['ddlPeriodo2'] : 0;
-        $objData->Listar($ddlPeriodo1, $ddlPeriodo2);
-          header('Content-Type: text/csv; charset=utf-8');  
-          header('Content-Disposition: attachment; filename=data.csv');  
-          $output = fopen("php://output", "w");  
-          fputcsv($output, array('periodo', 'centroCosto', 'TipoFamilia', 'Producto', 'cantidad', 'costo','valor'));
-          $query = "SELECT * from SUMINISTROS";  
-          $result = mysqli_query($connect, $query);  
-          while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))  
-          {  
-               fputcsv($output, $row);  
-          }  
-          fclose($output);  
+
+        $rowCount = 0;
+
+        $rsInventario = $objData->Listar($ddlPeriodo1, $ddlPeriodo2);
+
+        $countInventario = count($rsInventario);
+
+        $objPHPExcel->getActiveSheet()->SetCellValue('A1', 'PERIODO');
+        $objPHPExcel->getActiveSheet()->SetCellValue('B1', 'CENTRO DE COSTO');
+        $objPHPExcel->getActiveSheet()->SetCellValue('C1', 'TIPO DE FAMILIA');
+        $objPHPExcel->getActiveSheet()->SetCellValue('D1', 'FAMILIA');
+        $objPHPExcel->getActiveSheet()->SetCellValue('E1', 'PRODUCTO');
+        $objPHPExcel->getActiveSheet()->SetCellValue('F1', 'CANTIDAD');
+        $objPHPExcel->getActiveSheet()->SetCellValue('G1', 'COSTO');
+        $objPHPExcel->getActiveSheet()->SetCellValue('H1', 'VALOR');
+
+        if ($countInventario > 0) {
+            while ($rowCount < $countInventario) {
+                $urut = $rowCount + 2;
+                $objPHPExcel->getActiveSheet()->SetCellValue('A' . $urut, $rsInventario[$rowCount]['periodo']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('B' . $urut, $rsInventario[$rowCount]['CentroCosto']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('C' . $urut, $rsInventario[$rowCount]['TipoFamilia']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('D' . $urut, $rsInventario[$rowCount]['Familia']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('E' . $urut, $rsInventario[$rowCount]['Producto']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('F' . $urut, $rsInventario[$rowCount]['cantidad']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('G' . $urut, $rsInventario[$rowCount]['costo']);
+                $objPHPExcel->getActiveSheet()->SetCellValue('H' . $urut, $rsInventario[$rowCount]['valor']);
+                ++$rowCount;
+            }
+        }
+
+        require_once '../../common/PHPExcel/IOFactory.php';
+
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+
+        $objWriter->save($nameFileExport);
+
     }  
 
     elseif (isset($_POST['btnEliminar'])) {

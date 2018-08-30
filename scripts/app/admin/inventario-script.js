@@ -146,10 +146,10 @@ $(function () {
                 var cantrec = 0;
 
                 cantinv = Number($(this).val());
-                cantant = Number($(this).parent().parent().find('.cantAnte').val());
-                cantenv = Number($(this).parent().parent().find('.cantEnvi').val());
-                cantree = Number($(this).parent().parent().find('.cantReen').val());
-                cantrec = Number($(this).parent().parent().find('.cantReci').val());
+                cantant = Number($(this).parent().parent().find('.cantAnte').text());
+                cantenv = Number($(this).parent().parent().find('.cantEnvi').text());
+                cantree = Number($(this).parent().parent().find('.cantReen').text());
+                cantrec = Number($(this).parent().parent().find('.cantReci').text());
 
                 var consumo = cantant + cantenv + cantrec - cantree - cantinv ;
 
@@ -276,13 +276,13 @@ function BuscarDatos (pagina, centrocosto) {
                     var idperiodo = data[i].tm_idperiodo;                    
                     strhtml += '<tr data-idproducto="' + idproducto+ '">';
                     strhtml += '<td class="hidden" data-iddetalle="'+idinventario +'"></td>';
-                    strhtml += '<td width="30%" class="align-left">'+data[i].Producto.substr(0,90) +'</td>';
-                    strhtml += '<td width="10%" class="cantAnte text-right">'+data[i].tm_cant_ante +'</td>';
-                    strhtml += '<td width="10%" class="cantEnvi text-right">'+data[i].tm_cant_envi +'</td>';
-                    strhtml += '<td width="10%" class="cantReen text-right">'+data[i].tm_cant_reen +'</td>';
-                    strhtml += '<td width="10%" class="cantReci text-right">'+data[i].tm_cant_reci +'</td>';
-                    strhtml += '<td><input type="text" class="cantInve inputTextInTable text-right" width="10%" value="'+Number(data[i].tm_cant_inve).toFixed(2) +'" /></td>';
-                    strhtml += '<td width="10%" class="cantCons text-right">'+data[i].tm_cant_cons +'</td>';
+                    strhtml += '<td style="width:30%;" class="align-left">'+data[i].Producto.substr(0,90) +'</td>';
+                    strhtml += '<td style="width:10%;" class="cantAnte text-right">'+data[i].tm_cant_ante +'</td>';
+                    strhtml += '<td style="width:10%;" class="cantEnvi text-right">'+data[i].tm_cant_envi +'</td>';
+                    strhtml += '<td style="width:10%;" class="cantReen text-right">'+data[i].tm_cant_reen +'</td>';
+                    strhtml += '<td style="width:10%;" class="cantReci text-right">'+data[i].tm_cant_reci +'</td>';
+                    strhtml += '<td><input style="width:10%;" type="text" class="cantInve inputTextInTable text-right" value="'+Number(data[i].tm_cant_inve).toFixed(2) +'" /></td>';
+                    strhtml += '<td style="width:10%;" class="cantCons text-right">'+data[i].tm_cant_cons +'</td>';
                     strhtml += '<td class="align-center"><button data-idproducto="'+idproducto+'" data-idcentrocosto="'+idcentrocosto+'" data-idperiodo="'+idperiodo+'" type="button id="cambio'+i+'">Redirigir</button></td>';
                     strhtml += '</tr>';
                     ++i;
@@ -383,7 +383,6 @@ function GuardarDatos () {
             dataType: 'json',
             success: function(data){
                 precargaExp('#pnlForm', false);
-                //showSnackbar({ message: data.titulomsje });
                 createSnackbar(data.titulomsje);
                 
                 if (Number(data.rpta) > 0){
@@ -643,7 +642,7 @@ function RegistrarInventario () {
     var idcentrocosto = document.getElementById("ddlCenCos").value;    
     if (countdata > 0){
         while (i < countdata){
-            var iditem = gvDatos.rows[i].getAttribute('data-iddetalle');
+            var iditem = gvDatos.rows[i].cells[0].getAttribute('data-iddetalle');
             var idproducto = gvDatos.rows[i].getAttribute('data-idproducto');
             var cantante = gvDatos.rows[i].cells[2].innerText;
             var cantenvi = gvDatos.rows[i].cells[3].innerText;
@@ -673,7 +672,8 @@ function RegistrarInventario () {
         contentType:false,
         processData: false,
         success: function (data) {
-            precargaExp('#pnlListado > .gp-body', false);
+                precargaExp('#pnlListado > .gp-body', false);
+                createSnackbar(data.titulomsje);
 
         },
         error: function (data) {
